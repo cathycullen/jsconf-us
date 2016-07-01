@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Liquid Layout</title>
+    <meta charset="UTF-8" />
+    <style>
+  #col1,
+  #col2 {
+  padding: 20px 30px;
+  }
+
+  #col1 {
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+  }
+
+  #col2 {
+    overflow: hidden;
+  }
+
+#col1 {
+  float: left;
+  width: 70%;
+  box-sizing: border-box;
+}
+#col2 {
+  overflow: hidden;
+}
+main {
+  min-width: 600px;
+  max-width: 1400px;
+}
+
+#row:nth-child(odd) {
+    background: pink;
+}
+
+tr:nth-child(odd) td:nth-child(1){
+  background: gray;
+}
+td:nth-child(2) {
+}
+td {
+  border-style: solid;
+}
+
+#row:nth-child(odd) {
+    background: green;
+}
+
+#row:nth-child(odd) #col1 {
+    background: green;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="row">
+        <div id="col1">
+          This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.
+        </div>
+        <div id="col2">
+          This stuff is in the sidebar.  This stuff is in the sidebar.  This stuff is in the sidebar.  This stuff is in the sidebar.  This stuff is in the sidebar.  This stuff is in the sidebar.  This stuff is in the sidebar.
+        </div>
+      </div>
+      <hr>
+      <div id="row">
+        <div id="col1">
+          This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.
+        </div>
+        <div id="col2">
+          This stuff is in the sidebar.  This stuff is in the sidebar.  This stuff is in the sidebar.  This stuff is in the sidebar.  This stuff is in the sidebar.  This stuff is in the sidebar.  This stuff is in the sidebar.
+        </div>
+      </div>
+      <hr>
+      <div id="row">
+        <div id="col1">
+          This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.  This stuff is in the content section.
+        </div>
+        <div id="col2">
+          This stuff is in the sidebar.  This stuff is in the sidebar.  This stuff is in the sidebar.  This stuff is in the sidebar.  This stuff is in the sidebar.  This stuff is in the sidebar.  This stuff is in the sidebar.
+        </div>
+      </div>
+    </main>
+<h1>Hello <table>
+
+  <h1>This is a heading</h1>
+  <div id="row">
+      <div id="col1">
+        This stuff is in the content section.
+      </div>
+      <div id="col2">
+        This stuff is in the sidebar.
+      </div>
+  </div>
+  <div id="row">The second paragraph.</div>
+  <div id="row">The third paragraph.</div>
+  <div id="row">The fourth paragraph.</div>
+</table></h1>
+    <table>
+      <tr>
+        <td>Table Data</td>
+        <td>Table Data</td>
+      </tr>
+      <tr>
+        <td>Table Data</td>
+        <td>Table Data</td>
+      </tr>
+      <tr>
+        <td>Table Data</td>
+        <td>Table Data</td>
+      </tr>
+    </table>
+  </body>
+</html>

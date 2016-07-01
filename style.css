@@ -1,0 +1,41 @@
+@import url("whitespace-reset.css");
+
+* {
+  box-sizing: border-box;
+}
+body {
+    font: normal 21px 'Inconsolata', Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.gray-text {
+  color: #999;
+}
+b {
+  background: yellow;
+  color: #000000;
+  font-weight: bold;
+}
+footer {
+  font-size: 16px;
+  margin: 150px 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+}
+@media(min-width:768px) {
+  .container {
+    max-width: 750px
+  }
+}
+@media(min-width:992px) {
+  .container {
+      max-width: 970px
+  }
+}
+@media(min-width:1200px) {
+  .container {
+      max-width: 1170px
+  }
+}
