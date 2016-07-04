@@ -1,187 +1,73 @@
-<!doctype html public "✰">
-<html lang="en">
-<!--
-
- -->
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- gh-pages likes to cache for 24h, let's disable that -->
-    <meta http-equiv="cache-control" content="max-age=0" />
-    <meta http-equiv="expires" content="Thu, 01 Jan 1970 13:37:00 GMT" />
-    <meta http-equiv="pragma" content="no-cache" />
-    <link rel="shortcut icon" href="/img/favicon.png" >
-
-    <meta name="description" content="JSConf US 2015 - ">
-
-    <title>JSConf US 2015 - Tickets</title>
-    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
-<!--     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'> -->
-<!--     <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'> -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <link rel="stylesheet" media="screen" href="/css/jsconf.css" >
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src='https://js.tito.io/v1' async></script>
-    <script src='/js/jsconf.js'></script>
+<title>JS Conf US</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="header-footer.css">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="speakers.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+<style>
+</style>
 </head>
-<!---
--->
 <body>
-
-
-  <div id='header' >
-    <div id='logo'></div>
-    <div id='extra'>
-      <div class='container'>
-        <div class='row'>
-<!--           <div class='pull-left hidden-xs'>
-          <a class='btn btn-primary' href="https://ti.to/jsconf-us/jsconfus2015" style="color:white">Register Now</a>
+  <header>
+    <div id="logo-section">
+      <h1><a href="home.html"></a></h1>
+      <div class="container">
+        <div class="summary">  5/27/2015 - 5/29/2015 <br/>Amelia Island, FL <br />
+          <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+        </div>
+        <div class="nav-row">
+          <div class="nav-button-frame">
+            <a href="" class="nav-button"><i class="fa fa-bars" aria-hidden="true"></i></a>
           </div>
- -->
-           <div class='quick-info'>
-          5/27/2015 - 5/29/2015 <br/>Amelia Island, FL <br/>
-          <a href="https://www.facebook.com/JsConf" id='facebook-button'  rel="me"><i class='fa fa-facebook-square'></i></a>
-          <a href="http://twitter.com/jsconf" id='twitter-button'  rel="me"><i class='fa fa-twitter-square'></i></a>
-          <a href="https://plus.google.com/communities/108690140179099971045" id='gplus-button'  rel="publisher"><i class='fa fa-google-plus-square'></i></a>
-              </div>
         </div>
       </div>
     </div>
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <li><a href="home.html"><i class='fa fa-home'></i>Home</a></li>
+          <li><a href="tickets.html"><i class='fa fa-ticket'></i>Attend</a></li>
+          <li><a href="schedule.html"><i class='fa fa-calendar'></i>Schedule</a></li>
+          <li><a href="speakers.html"><i class='fa fa-microphone'></i>Speakers</a></li>
+          <li><a href="trainingtrack.html"><i class='fa fa-puzzle-piece'></i>Learn</a></li>
+          <li><a href="sotrack.html"><i class='fa fa-smile-o'></i>SO Track</a></li>
+          <li><a href="venue.html"><i class='fa fa-globe'></i>Venue</a></li>
+          <li><a href="sponsors.html"><i class='fa fa-rocket'></i>Sponsors</a></li>
+          <li><a href="codeofconduct.html"><i class='fa fa-users'></i>Conduct</a></li>
+          <li><a href="about.html"><i class='fa fa-heart'></i>About</a></li>
+      </ul>
+      </div>
+    </nav>
   </div>
-  <div class="navbar navbar-inverse" role="navigation">
-
-  <div class='container'>
-  <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-
-          <ul class="nav center navbar-nav">
-            <li id='Home'><a href="/" title='Return Home'><i class='fa fa-home'></i> Home</a></li>
-            <li id='Menu'><a href="/tickets.html" title="Launch Passes"><i class='fa fa-ticket'></i> Attend</a></li>
-            <li id='scheduleMenu'><a href="/schedule.html"><i class='fa fa-calendar'></i> Schedule</a></li>
-            <li id='speakersMenu'><a href="/speakers.html"><i class='fa fa-microphone'></i> Speakers</a></li>
-            <li id='trainingMenu'><a href="/trainingtrack.html"><i class='fa fa-puzzle-piece'></i> Learn</a></li>
-            <li id='soMenu'><a href="/sotrack.html"><i class='fa fa-smile-o'></i> SO Track</a></li>
-            <li id='venueMenu'><a href="/venue.html"><i class='fa fa-globe'></i> Venue</a></li>
-            <li id='sponsorsMenu'><a href="/sponsors.html"><i class='fa fa-rocket'></i> Sponsors</a></li>
-            <li id='sponsorsMenu'><a href="http://jsconf.com/codeofconduct.html" target="_blank"><i class='fa fa-users'></i> Conduct</a></li>
-            <li id='aboutMenu'><a href="/about.html"><i class='fa fa-heart'></i> About</a></li>
-          </ul>
-
-          </nav>
-          </div>
-          </div>
-
-    <style type='text/css'>
-.onsale {  text-align: center;}
-</style>
-
-  <!-- place this in your head tag -->
-<link rel="stylesheet" type="text/css" href='https://css.tito.io/v1' />
-<div class='container'>
-  <h2>JSConf US 2015 Tickets</h2>
-
-  <p class='onsale'><a class="btn btn-lg " href="https://ti.to/jsconf-us/jsconfus2015">ON SALE</a></p>
-
-  <p><img class='img-responsive' src="/img/family.jpg" alt="Sand underneath your toes"/></p>
-
-  <p>JSConf US tickets have always been one of the hottest tickets around. Our constant dedication to quality, attention to details, and willingness to experiment have established us as leaders of the technology conference format. This year will be no exception!</p>
-
-  <p>Your ticket provides you access to all of the social events, all of the lectures, any of the training sessions you would like to attend, and one of the <a href="/schedule.html#cyoa">choose-your-own-adventure sessions</a>. The ticket price also covers at least nine (9) hot and amazing meals prepared for you by our incredible on-site chef over the five (5) days of JSConf US. If you need any assistance/encouragement to help solidify arrangements with your employer OR you require extra assistance, please don't hesitate to <a href="mailto:team@jsconf.us">contact us directly</a>.</p>
+  </header>
+  <main>
 
 
-  <h2>Just Give Me Tickets!</h2>
-  <tito-widget event="jsconf-us/jsconfus2015"></tito-widget>
+</main>
 
-  <h2 id='details'>Pricing Details for JSConf US 2015</h2>
-  <p>Below is the pricing tiers for JSConf US 2015. We have tried to tier the ticket release batches such that anyone around the world can access them when they first open up. If we have missed something or you need assistance, please  <a href="mailto:team@jsconf.us">contact us directly</a>. If you require information about the event for corporate, educational, or other reimbursement, you are responsible for requesting and obtaining it prior to the ticket sales opening up. We are purposefully providing a significant lead time on ticket sales for this reason.</p>
+  <div class="container">
+    <footer>
+      <center><a href="/"><img src="img/js.png" alt="JSConf US 2015" height="82" width="82" /></a><br/><br/>
+        <a href="home.html" >Home</a>  |
+        <a href="schedule.html">Schedule</a>  |
+        <a href="call-for-speakers.html">Call for Speakers</a>  |
+        <a href="venue.html">Venue</a>  |
+        <a href="sponsors.html">Sponsors</a>  |
+        <a href="about.html">About</a>  |
+        <a title="Tickets" href="https://ti.to/jsconf-us/jsconfus2015">Tickets</a> |
+        <a href="venue.html#villas">Lodging</a>
+        <div class="credits">
+          <p ><br/>Copyright &copy; 2016 Iterative Designs</p>
+        </div>
+      </center>
+    </footer>
+  </div>
 
-<div class='soldout-tickets'>
-  <h3 id='outfield'>The Outfield ($1,000)</h3>
-  <p>A batch of tickets will be made available starting December 20<sup>th</sup>, 2014 at <a href="https://ti.to/jsconf-us/jsconfus2015">tickets.jsconf.us</a>. These tickets are for anyone that absolutely needs the ticket purchase to be in 2014 versus 2015. Unless you are buying the ticket through a company or organization, we <b>strongly recommend</b> you wait for the next round. Tickets will be sold on a first-come, first-served basis with no refunds offered, but the <a href="#transfer">tickets can be transferred</a>.   Once the set of tickets are sold out, there are no more.</p>
-
-  <h3 id='hallandoates'>Hall &amp; Oates ($850)</h3>
-  <p>A batch of tickets will be made available starting January 14<sup>th</sup>, 2015 at 1:00 PM EST at <a href="https://ti.to/jsconf-us/jsconfus2015/">tickets.jsconf.us</a>. Tickets will be sold on a first-come, first-served basis with no refunds offered, but the <a href="#transfer">tickets can be transferred</a>.   Once the set of tickets are sold out, there are no more.</p>
-</div>
-
-  <h3 id='queen'>Queen ($1,050)</h3>
-  <p>A batch of tickets will be made available starting January 28<sup>th</sup>, 2015 at 9:00 AM EST at <a href="https://ti.to/jsconf-us/jsconfus2015/">tickets.jsconf.us</a>. Tickets will be sold on a first-come, first-served basis with no refunds offered, but the <a href="#transfer">tickets can be transferred</a>.   Once the set of tickets are sold out, there are no more.</p>
-
-  <h3 id='toto'>Toto ($1,050)</h3>
-  <p>A batch of tickets will be made available starting January 28<sup>th</sup>, 2015 at 6:00 PM EST at <a href="https://ti.to/jsconf-us/jsconfus2015/">tickets.jsconf.us</a>. Tickets will be sold on a first-come, first-served basis with no refunds offered, but the <a href="#transfer">tickets can be transferred</a>.   Once the set of tickets are sold out, there are no more.</p>
-
-
-  <h3 id='sugarhill'>The Sugarhill Gang ($1,600)</h3>
-  <p>A batch of tickets will be made available starting February 11<sup>th</sup>, 2015 at 1:00 PM EST at <a href="https://ti.to/jsconf-us/jsconfus2015/">tickets.jsconf.us</a>. Tickets will be sold on a first-come, first-served basis with no refunds offered, but the <a href="#transfer">tickets can be transferred</a>.   Once the set of tickets are sold out, there are no more.</p>
-
-
-  <h3  id='journey'>Journey ($1,999)</h3>
-  <p>Don't stop believing, the final batch of tickets will be made available starting February 11<sup>th</sup>, 2015 at 1:00 PM EST at <a href="https://ti.to/jsconf-us/jsconfus2015/">tickets.jsconf.us</a>. Tickets will be sold on a first-come, first-served basis with no refunds offered, but the <a href="#transfer">tickets can be transferred</a>.   Once the set of tickets are sold out, there are no more.</p>
-
-
-
-  <p class='onsale'><a class="btn btn-lg btn-primary" href="https://ti.to/jsconf-us/jsconfus2015">Tickets Now On Sale!</a></p>
-  <h2 id='extrafood'>Extra Meal Tickets for JSConf US 2015</h2>
-
-  <h3>Vegan Meal Ticket ($20)</h3>
-  <p>We have provided vegan specific meals since 2010, every year we end up with almost 90% of those meal uneaten. These meals often cost more than the buffet meals provided to other attendees due to the special requirements to prepare them. If you require a specifically prepared meal, vegan or otherwise, that cannot be serviced as part of a group buffet, we ask that you purchase a Vegan Meal Ticket. With the meal ticket, we will have a specially prepared meal ready for you at every meal and social event. If you have any questions about this, please <a href="mailto:team@jsconf.us">email us directly</a>.</p>
-
-  <h3>Significant Other Meal Ticket (Adult: $350, Child - 12 and under: $175)</h3>
-  <p>We do invite you to bring your significant other(s) along to JSConf US 2015 and will be providing a sponsored activities track for them. In supplement to the activities some significant others have expressed interest in joining for meals with the attendees. If you want to eat with the conference, be sure to purchase a Significant Other meal ticket. This meal ticket provides access to all four social events (3 evening socials and 1 relax.js brunch) as well as breakfast on Wednesday and Friday.</p>
-
-
-
-  <h2>Conference Attendance Agreements</h2>
-  <p>By purchasing a JSConf US ticket, you will be explicitly required to agree with our stated <a href="http://jsconf.com/codeofconduct.html">Code of Conduct</a>. You acknowledge that if you or a group you are involved with act in a manner not in accordance with the code of conduct, you will be expelled from the conference with no refund. You agree that you will act with respect for other attendees, organizers, speakers, and staff (both conference and venue) for your entire stay at JSConf US. Finally, you agree that if you see something wrong you will notify a JSConf Staff member to allow them to take swift and appropriate actions. The privacy of individuals reporting issues will be maintained and we deeply appreciate your willingness to come forward about issues. We are here to help.</p>
-
-  <h2 id='transfer'>Transferring a Ticket</h2>
-  <p>Tickets will not be refunded under any circumstances, but they may be transferred. To transfer the ownership of a JSConf US 2015 ticket, you can simply send the registration link you will receive from <a href="http://tito.io">Tito</a> and allow the individual you are transferring to to update their information. Transfers will not be handled by or involve the JSConf team. Tickets may be transferred until May 1st, 2015 due to printing deadlines. We appreciate your understanding in this matter.</p>
-
-  <h2>Why Are You Selling Tickets Before Speakers Are Announced And So Early?</h2>
-  <p>Our conference dates are scheduled shortly after the US Federal holiday of Memorial Day, which historically has higher than normal travel costs. We are trying to allow JSConf attendees the ability to book their travel arrangements significantly in advance so as to take advantage of lower prices. We understand that the cost of a conference isn't just the price of the ticket, but also the hotel, travel, ticket, and other miscellaneous items as such we are doing our best to allow you the opportunity to make that as cost-effective as possible. We understand that some people might not be comfortable purchasing a ticket to a conference with little to no insight about what will be presented at the event. We encourage you to review our previous 5 absolutely amazing events and the wonderful track record we have. If that is not enough to convince you, please to bear in mind that we do offer all of the content for free shortly after the event. We apologize for any inconvenience or uncertainty this may cause you, but we are trying to balance the best of all worlds.</p>
-  <!-- <p class='onsale'><a class="btn btn-lg " href="https://ti.to/jsconf-us/jsconfus2015">SOLD OUT</a></p> -->
-</div>
-
-
-    <div class="container">
-
-        <footer>
-            <center><a href="/"><img src="/img/js.png" alt="JSConf US 2015" height="82" width="82" /></a><br/><br/>
-
-              <a href="/" >Home</a>  |
-              <a href="/schedule.html">Schedule</a>  |
-              <a href="/call-for-speakers.html">Call for Speakers</a>  |
-              <a href="/venue.html">Venue</a>  |
-              <a href="/sponsors.html">Sponsors</a>  |
-              <a href="/about.html">About</a>  |
-              <a title="Tickets" href="https://ti.to/jsconf-us/jsconfus2015">Tickets</a> |
-              <a href="/venue.html#villas">Lodging</a>
-            <div class="credits">
-                <p class="copyright"><br/>Copyright &copy; <script>document.write((new Date()).getFullYear());</script> Iterative Designs</p>
-            </div>
-            </center>
-        </footer>
-
-    </div>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-1264213-15', 'jsconf.us');
-  ga('send', 'pageview');
-  activateMenu('ticketsMenu');
-</script>
 </body>
-</html>

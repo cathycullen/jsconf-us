@@ -1,227 +1,73 @@
-<!doctype html public "✰">
-<html lang="en">
-<!--
-
- -->
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- gh-pages likes to cache for 24h, let's disable that -->
-    <meta http-equiv="cache-control" content="max-age=0" />
-    <meta http-equiv="expires" content="Thu, 01 Jan 1970 13:37:00 GMT" />
-    <meta http-equiv="pragma" content="no-cache" />
-    <link rel="shortcut icon" href="/img/favicon.png" >
-
-    <meta name="description" content="JSConf US 2015 - ">
-
-    <title>JSConf US 2015 - JSConf US 2015 Training</title>
-    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
-<!--     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'> -->
-<!--     <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'> -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <link rel="stylesheet" media="screen" href="/css/jsconf.css" >
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src='https://js.tito.io/v1' async></script>
-    <script src='/js/jsconf.js'></script>
+<title>JS Conf US</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="header-footer.css">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="speakers.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+<style>
+</style>
 </head>
-<!---
--->
 <body>
-
-
-  <div id='header' >
-    <div id='logo'></div>
-    <div id='extra'>
-      <div class='container'>
-        <div class='row'>
-<!--           <div class='pull-left hidden-xs'>
-          <a class='btn btn-primary' href="https://ti.to/jsconf-us/jsconfus2015" style="color:white">Register Now</a>
+  <header>
+    <div id="logo-section">
+      <h1><a href="home.html"></a></h1>
+      <div class="container">
+        <div class="summary">  5/27/2015 - 5/29/2015 <br/>Amelia Island, FL <br />
+          <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+        </div>
+        <div class="nav-row">
+          <div class="nav-button-frame">
+            <a href="" class="nav-button"><i class="fa fa-bars" aria-hidden="true"></i></a>
           </div>
- -->
-           <div class='quick-info'>
-          5/27/2015 - 5/29/2015 <br/>Amelia Island, FL <br/>
-          <a href="https://www.facebook.com/JsConf" id='facebook-button'  rel="me"><i class='fa fa-facebook-square'></i></a>
-          <a href="http://twitter.com/jsconf" id='twitter-button'  rel="me"><i class='fa fa-twitter-square'></i></a>
-          <a href="https://plus.google.com/communities/108690140179099971045" id='gplus-button'  rel="publisher"><i class='fa fa-google-plus-square'></i></a>
-              </div>
         </div>
       </div>
     </div>
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <li><a href="home.html"><i class='fa fa-home'></i>Home</a></li>
+          <li><a href="tickets.html"><i class='fa fa-ticket'></i>Attend</a></li>
+          <li><a href="schedule.html"><i class='fa fa-calendar'></i>Schedule</a></li>
+          <li><a href="speakers.html"><i class='fa fa-microphone'></i>Speakers</a></li>
+          <li><a href="trainingtrack.html"><i class='fa fa-puzzle-piece'></i>Learn</a></li>
+          <li><a href="sotrack.html"><i class='fa fa-smile-o'></i>SO Track</a></li>
+          <li><a href="venue.html"><i class='fa fa-globe'></i>Venue</a></li>
+          <li><a href="sponsors.html"><i class='fa fa-rocket'></i>Sponsors</a></li>
+          <li><a href="codeofconduct.html"><i class='fa fa-users'></i>Conduct</a></li>
+          <li><a href="about.html"><i class='fa fa-heart'></i>About</a></li>
+      </ul>
+      </div>
+    </nav>
   </div>
-  <div class="navbar navbar-inverse" role="navigation">
+  </header>
+  <main>
 
-  <div class='container'>
-  <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 
-          <ul class="nav center navbar-nav">
-            <li id='Home'><a href="/" title='Return Home'><i class='fa fa-home'></i> Home</a></li>
-            <li id='Menu'><a href="/tickets.html" title="Launch Passes"><i class='fa fa-ticket'></i> Attend</a></li>
-            <li id='scheduleMenu'><a href="/schedule.html"><i class='fa fa-calendar'></i> Schedule</a></li>
-            <li id='speakersMenu'><a href="/speakers.html"><i class='fa fa-microphone'></i> Speakers</a></li>
-            <li id='trainingMenu'><a href="/trainingtrack.html"><i class='fa fa-puzzle-piece'></i> Learn</a></li>
-            <li id='soMenu'><a href="/sotrack.html"><i class='fa fa-smile-o'></i> SO Track</a></li>
-            <li id='venueMenu'><a href="/venue.html"><i class='fa fa-globe'></i> Venue</a></li>
-            <li id='sponsorsMenu'><a href="/sponsors.html"><i class='fa fa-rocket'></i> Sponsors</a></li>
-            <li id='sponsorsMenu'><a href="http://jsconf.com/codeofconduct.html" target="_blank"><i class='fa fa-users'></i> Conduct</a></li>
-            <li id='aboutMenu'><a href="/about.html"><i class='fa fa-heart'></i> About</a></li>
-          </ul>
+</main>
 
-          </nav>
-          </div>
-          </div>
-
-    <div class='container'>
-<h2>Training Track</h2>
-<br/>
-<br/>
-<br/>
-<div class='speaker'>
-    <p>The Training Track at JSConf 2015 is designed to provide value to any and everyone who attends. Starting with the basics and working our way into more advanced topics, we'll cover a broad variety of topics, offering something for everyone. From the fundamentals of JS to the future that is ES2015, come check out what some of the best educators in our field have to say.</p>
-</div>
-
-    <div class='col-md-12'>
-<div class='speaker clearfix' id='jsfun'>
-    <div class='pull-right socialmedia'>
-        9:30am, Wednesday
+  <div class="container">
+    <footer>
+      <center><a href="/"><img src="img/js.png" alt="JSConf US 2015" height="82" width="82" /></a><br/><br/>
+        <a href="home.html" >Home</a>  |
+        <a href="schedule.html">Schedule</a>  |
+        <a href="call-for-speakers.html">Call for Speakers</a>  |
+        <a href="venue.html">Venue</a>  |
+        <a href="sponsors.html">Sponsors</a>  |
+        <a href="about.html">About</a>  |
+        <a title="Tickets" href="https://ti.to/jsconf-us/jsconfus2015">Tickets</a> |
+        <a href="venue.html#villas">Lodging</a>
+        <div class="credits">
+          <p ><br/>Copyright &copy; 2016 Iterative Designs</p>
+        </div>
+      </center>
+    </footer>
   </div>
-  <div class='name'>
-    <h3>JavaScript Fundamentals</h3>
-  </div>
-  <div class='talk'>
-    <div class='title'>Level: Beginner</div>
-  </div>
-  <div class='bio'>
-<!--    <div class='title'>Description</div>-->
-    <p>JavaScript is one of the world’s most popular programming languages, used by virtually all web applications. Learn the basics with this focused introduction to JavaScript Fundamentals. From variable types and functions to scope and prototype chains, you’ll gain a solid understanding of the language and a firm foundation for creating real world applications while writing clean, maintainable JavaScript.</p>
 
-  </div>
-</div>
-</div>
-
-    <div class='col-md-12'>
-<div class='speaker clearfix' id='nodejs'>
-    <div class='pull-right socialmedia'>
-        12:45pm, Wednesday
-  </div>
-  <div class='name'>
-    <h3>Intro to Node.js</h3>
-  </div>
-  <div class='talk'>
-    <div class='title'>Level: Beginner</div>
-  </div>
-  <div class='bio'>
-<!--    <div class='title'>Description</div>-->
-    <p>In this intensive training segment, we’re going to get you started developing in Node.js. We’ll build a small application that serves a static webpage, has dynamic routing, and interacts with a third-party API (maybe even of the NodeBot variety...?). No knowledge of Node.js necessary, though a knowledge of JavaScript is a good thing to have for this training.</p>
-
-  </div>
-</div>
-</div>
-
-    <div class='col-md-12'>
-<div class='speaker clearfix' id='debug'>
-    <div class='pull-right socialmedia'>
-        9:30am, Friday
-  </div>
-  <div class='name'>
-    <h3>Debugging Deep Dive</h3>
-  </div>
-  <div class='talk'>
-    <div class='title'>Level: Beginner</div>
-  </div>
-  <div class='bio'>
-<!--    <div class='title'>Description</div>-->
-    <p>Debugging is one of those things that (almost) everyone despises, but that absolutely every software developer needs to know how to do. Over the past fifteen years, Brian has worked through some of the weirdest, wildest bits of JavaScript, and has the mental scars to prove it.
-In this deep dive, come and absorb some of his knowledge on how to debug all the things! We&#39;ll be focusing on the front-end mostly, as that&#39;s more commonly where the weirdness happens. We&#39;ll explore devtools in various browsers, as well as use of tools like proxies to help figure out what the heck is wrong with things.</p>
-
-  </div>
-</div>
-</div>
-
-    <div class='col-md-12'>
-<div class='speaker clearfix' id='es6'>
-    <div class='pull-right socialmedia'>
-        12:45pm, Friday
-  </div>
-  <div class='name'>
-    <h3>ES6 Overview Workshop</h3>
-  </div>
-  <div class='talk'>
-    <div class='title'>Level: Intermediate</div>
-  </div>
-  <div class='bio'>
-<!--    <div class='title'>Description</div>-->
-    <p>Coming soon, in a theater near you. It’s bigger than Ultron. It’s better than Ultron. It’s more ubiquitous than Robert Downey Jr. It’s ES6, JavaScript’s next in-your-face revsion. You’ve never seen a sequel, until you’ve seen this.
-I’d like to take you all to the movies. Explain to you all about ES6, and what new features are accessible now, even in older browsers or node.js. You’ll see what we can access with a single new script tag. I’ll also go through many of the features that are “transpilable” and explain what that means. I’ll even go so far as to say why some don’t like the word “transpile” at all. It’ll be an excuse for me to get into the fun and tangled web of compilers.
-The goal of this workshop will be to give everyone a taste and experience of the future JavaScript features that we can all use with only a few tweaks to our current processes.</p>
-
-  </div>
-</div>
-</div>
-
-    <div class='col-md-12'>
-<div class='speaker clearfix' id='react'>
-    <div class='pull-right socialmedia'>
-        2:15pm, Friday
-  </div>
-  <div class='name'>
-    <h3>Introduction and Getting Started with React.js</h3>
-  </div>
-  <div class='talk'>
-    <div class='title'>Level: Intermediate</div>
-  </div>
-  <div class='bio'>
-<!--    <div class='title'>Description</div>-->
-    <p>Why is React.js a game changer in a world with so many UI frameworks? We&#39;ll have fun learning what makes React.js special and uncover its simple core concepts. As we continue our journey, we&#39;ll apply our React.js skills to building some reactive web apps. You&#39;ll emerge from this workshop knowing the basics of React.js and will be ready to use it for your own projects.</p>
-
-  </div>
-</div>
-</div>
-
-
-</div>
-
-
-    <div class="container">
-
-        <footer>
-            <center><a href="/"><img src="/img/js.png" alt="JSConf US 2015" height="82" width="82" /></a><br/><br/>
-
-              <a href="/" >Home</a>  |
-              <a href="/schedule.html">Schedule</a>  |
-              <a href="/call-for-speakers.html">Call for Speakers</a>  |
-              <a href="/venue.html">Venue</a>  |
-              <a href="/sponsors.html">Sponsors</a>  |
-              <a href="/about.html">About</a>  |
-              <a title="Tickets" href="https://ti.to/jsconf-us/jsconfus2015">Tickets</a> |
-              <a href="/venue.html#villas">Lodging</a>
-            <div class="credits">
-                <p class="copyright"><br/>Copyright &copy; <script>document.write((new Date()).getFullYear());</script> Iterative Designs</p>
-            </div>
-            </center>
-        </footer>
-
-    </div>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-1264213-15', 'jsconf.us');
-  ga('send', 'pageview');
-  activateMenu('trainingMenu');
-</script>
 </body>
-</html>

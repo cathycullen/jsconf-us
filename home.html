@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="header-footer.css">
-<link rel="stylesheet" href="home.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 <style>
@@ -31,16 +30,16 @@
     <div class="nav">
       <div class="container">
         <ul>
-          <li><a href=""><i class='fa fa-home'></i>Home</a></li>
-          <li><a href=""><i class='fa fa-ticket'></i>Attend</a></li>
-          <li><a href=""><i class='fa fa-calendar'></i>Schedule</a></li>
-          <li><a href=""><i class='fa fa-microphone'></i>Speakers</a></li>
-          <li><a href=""><i class='fa fa-puzzle-piece'></i>Learn</a></li>
-          <li><a href=""><i class='fa fa-smile-o'></i>SO Track</a></li>
-          <li><a href=""><i class='fa fa-globe'></i>Venue</a></li>
-          <li><a href=""><i class='fa fa-rocket'></i>Sponsors</a></li>
-          <li><a href=""><i class='fa fa-users'></i>Conduct</a></li>
-          <li><a href=""><i class='fa fa-heart'></i>About</a></li>
+          <li><a href="home.html"><i class='fa fa-home'></i>Home</a></li>
+          <li><a href="tickets.html"><i class='fa fa-ticket'></i>Attend</a></li>
+          <li><a href="schedule.html"><i class='fa fa-calendar'></i>Schedule</a></li>
+          <li><a href="speakers.html"><i class='fa fa-microphone'></i>Speakers</a></li>
+          <li><a href="trainingtrack.html"><i class='fa fa-puzzle-piece'></i>Learn</a></li>
+          <li><a href="sotrack.html"><i class='fa fa-smile-o'></i>SO Track</a></li>
+          <li><a href="venue.html"><i class='fa fa-globe'></i>Venue</a></li>
+          <li><a href="sponsors.html"><i class='fa fa-rocket'></i>Sponsors</a></li>
+          <li><a href="codeofconduct.html"><i class='fa fa-users'></i>Conduct</a></li>
+          <li><a href="about.html"><i class='fa fa-heart'></i>About</a></li>
       </ul>
       </div>
     </nav>
@@ -51,33 +50,32 @@
       <div >
         <div class="a-well">
           <i class='fa fa-plane'></i>
-          <h2><a href="">How To Get To JSConf</a></h2>
+          <a class="how-to-link" href="">How To Get To JSConf</a>
         </div>
       </div>
     </header>
-
     <article class="container">
       <hr class="divider">
       <div class="row" >
-        <div class="column-1 large">
-          <h2>See JS Of Today <br/><span class="gray-text">Be Part of JS Tomorrow</span></h2>
+        <div class="column-1 col-60-pct">
+          <h2 class="headline">See JS Of Today <br/><span class="gray-text">Be Part of JS Tomorrow</span></h2>
           <p>JSConf has been the launch pad for many of the greatest things that we now take for granted on the web. This year will be no exception thanks to our famously unique <a href="">call for speakers</a> process designed to spotlight the new faces and ideas in the community. Like last year, we are including a <a href="">Training Track</a> to give you the perfect blend of future and practical all at one amazing event.</p>
           <a href="tickets.html" >Register now before it sells out.</a>
         </div>
-        <div class="column-2 small" >
+        <center class="column-2 col-40-pct" >
           <img src="img/js-sized.png" alt="JS">
-        </div>
+        </center>
       </div>
       <hr class="divider">
     </article>
 
     <article class="container">
       <div class="row" >
-      <div class="column-1 small" >
+      <center class="column-1 col-40-pct" >
         <img src="img/building.jpg" alt="developers building bots">
-      </div>
-        <div class="column-2 large">
-          <h2>Pushing The Boundaries<br/><span class="gray-text">Every Single Year</span></h2>
+      </center>
+        <div class="column-2 col-60-pct">
+          <h2 class="headline">Pushing The Boundaries<br/><span class="gray-text">Every Single Year</span></h2>
           <p>Over the last 7 years, JSConf has pushed the language outside of its comfort zone, the web browser, and into the forefront of <a href="http://jsconf.eu/2009/video_nodejs_by_ryan_dahl.html">servers</a>, <a href="http://nodecopter.com/">drones</a>, <a href="http://nodebots.io/">robots</a> and <a href="http://www.youtube.com/watch?v=O83-d0t0Ldw">video games</a>. Enjoy a very special day of exciting activities that are sure to make anyone happy from golfing to robot hacking to segway tours during our <a href="/schedule.html#cyoa">"choose-your-own-adventure" middle day</a> only at JSConf US.</p>
           <a href="tickets.html" >Register now before it sells out.</a>
         </div>
@@ -87,19 +85,19 @@
 
     <article class="container">
       <div class="row" >
-        <div class="column-1 large">
-          <h2>And One Last Thing <br/><span class="gray-text">The Venue</span></h2>
+        <div class="column-1 col-60-pct">
+          <h2 class="headline">And One Last Thing <br/><span class="gray-text">The Venue</span></h2>
           <p >Returning back to the <a href="/venue.html"><b>Omni Amelia Island Resort</b></a> with even more exciting events and adventures for you. Positioned north of Jacksonville, FL, this magical space has everything to make your trip incredible. Hop a segway, ride a bike, jump in the ocean, or enjoy the pool. Bring your friends and family, make a good time of the event. </p>
           <a href="tickets.html" >The greatest venue ever awaits your arrival.</a>
         </div>
-        <div class="column-2 small" >
-          <img src="img/pool.jpg" alt="pool">å
-        </div>
+        <center class="column-2 col-40-pct" >
+          <img src="img/pool.jpg" alt="pool">
+        </center>
       </div>
       <hr class="divider">
     </article>
     <div class="container">
-      <h2>With Huge Thanks To:</h2>
+      <h2  class="headline">With Huge Thanks To:</h2>
       <div class='row'>
         <a class='sponsor' href='http://www.bloomberglabs.com'><img src='img/sponsors/bloomberg.png' alt='Bloomberg'/></a>
         <a class='sponsor' href='http://www.emergingtechnologyadvisors.com/'><img src='img/sponsors/eta.png' alt='ETA'/></a>
@@ -131,23 +129,22 @@
       </div>
     </div>
 </main>
-
+<footer>
   <div class="container">
-    <footer>
-      <center><a href="/"><img src="img/js.png" alt="JSConf US 2015" height="82" width="82" /></a><br/><br/>
-        <a href="home.html" >Home</a>  |
-        <a href="schedule.html">Schedule</a>  |
-        <a href="call-for-speakers.html">Call for Speakers</a>  |
-        <a href="venue.html">Venue</a>  |
-        <a href="sponsors.html">Sponsors</a>  |
-        <a href="about.html">About</a>  |
-        <a title="Tickets" href="https://ti.to/jsconf-us/jsconfus2015">Tickets</a> |
-        <a href="venue.html#villas">Lodging</a>
-        <div class="credits">
-          <p ><br/>Copyright &copy; 2016 Iterative Designs</p>
-        </div>
-      </center>
-    </footer>
+    <center><a href="/"><img src="img/js.png" alt="JSConf US 2015" height="82" width="82" /></a><br/><br/>
+      <a href="home.html" >Home</a>  |
+      <a href="schedule.html">Schedule</a>  |
+      <a href="call-for-speakers.html">Call for Speakers</a>  |
+      <a href="venue.html">Venue</a>  |
+      <a href="sponsors.html">Sponsors</a>  |
+      <a href="about.html">About</a>  |
+      <a title="Tickets" href="https://ti.to/jsconf-us/jsconfus2015">Tickets</a> |
+      <a href="venue.html#villas">Lodging</a>
+      <div class="credits">
+        <p ><br/>Copyright &copy; 2016 Iterative Designs</p>
+      </div>
+    </center>
   </div>
+</footer>
 
 </body>
