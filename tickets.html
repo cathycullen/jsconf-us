@@ -10,6 +10,117 @@
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 <style>
+.blue-button {
+  display:inline-block;
+  background-color: #428bca;
+  border-color: #357ebd;
+  color: white;
+  font-size: 18px;
+  padding: 10px 16px;
+  line-height: 1.33;
+  border-radius: 6px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0 auto;
+  border: 1px solid transparent;
+}
+
+li {
+  list-style: none;
+}
+.blue-button:hover {
+    background-color: #3276b1;
+    border-color: #285e8e;
+}
+ a.blue-button {
+  color: white;
+}
+.tickets .header {
+  margin-bottom: 60px;
+}
+.tickets img {
+  margin-bottom: 8px;
+}
+.tickets p + p {
+  margin-top: 13px;
+}
+.tickets p {
+   margin: 0 0 10px 0;
+}
+.tickets p.tito-link {
+      font-size: 12px;
+      display: block;
+      margin-bottom: 5px;
+      text-align: center;
+      width: 100%;
+      margin: 30px 0 0 0;
+}
+.tickets p.name-column {
+  float: left;
+  font-weight: bold;
+  margin: 11px 0;
+}
+
+.tickets p.registration-message {
+    margin-top: -13px;
+    text-align: left;
+  font-weight: bold;
+  display:block;
+  margin: 0;
+}
+:nth-last-child(1)
+.tickets h3 {
+  margin:11px 0 10px 0;
+}
+.tickets .gray-button {
+    margin: 2px 0;
+    padding: 7px 24px;
+}
+.tickets .row {
+  padding-bottom: 0;
+  border-bottom: 1px solid #ccc;
+}
+.gray-button {
+    background: #ccc;
+    border-radius: 4px;
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    /*
+    height: 34px;
+    */
+    height: 30px;
+    line-height: 1.42857143;
+    margin: 2px 0;
+    padding: 3px 12px;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+    float: right;
+}
+.table-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #f1f1f1;
+    font-family: sans-serif;
+    color: #333;
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 10px 10px 0 10px;
+    width: 100%;
+}
+.name-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+.tickets.column-2 {
+  float: right;
+}
+.tickets .tito-row {
+  margin-top: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid #ccc;
+}
 </style>
 </head>
 <body>
@@ -47,9 +158,159 @@
     </nav>
   </div>
   </header>
-  <main>
+  <main class="container tickets">
+    <h2 class="header">JSConf US 2015 Tickets</h2>
+    <img src="img/family.jpg" alt="JS Family" height="195px;">
+    <p>JSConf US tickets have always been one of the hottest tickets around. Our constant dedication to quality, attention to details, and willingness to experiment have established us as leaders of the technology conference format. This year will be no exception!</p>
 
+    <p>Your ticket provides you access to all of the social events, all of the lectures, any of the training sessions you would like to attend, and one of the <a href="schedule.html">choose-your-own-adventure sessions.</a> The ticket price also covers at least nine (9) hot and amazing meals prepared for you by our incredible on-site chef over the five (5) days of JSConf US. If you need any assistance/encouragement to help solidify arrangements with your employer OR you require extra assistance, please don't hesitate to <a href="mailto:team@jsconf.us">contact us directly.</a></p>
+    <h2>Just Give Me Tickets!</h2>
+    <div class="table-wrapper">
+    <ul>
+      <li class="row">
+        <p class="name-column">Hall & Oats</p>
+        <p class="gray-button">Sold out</p>
+      </li>
+      <li class="row">
+        <p class="name-column">Toto</p>
+        <p class="gray-button">Sold out</p>
+      </li>
+      <li class="row">
+        <p class="name-column">The Sugarhill Gang</p>
+        <p class="gray-button">Sold out</p>
+      </li>
+      <li class="row">
+        <p class="name-column">Special Preparation Meal Ticket</p>
+        <p class="gray-button">Ended</p>
+      </li>
+      <li class="row">
+        <p class="name-column">General Admission - Journey</p>
+        <p class="gray-button">Sold out</p>
+      </li>
+      <li class="row">
+        <p class="name-column">May 27 - Fernandina SO Event</p>
+        <p class="gray-button">Ended</p>
+      </li>
+      <li class="row">
+        <p class="name-column">May 29 - St. Augustine SO Event</p>
+        <p class="gray-button">Ended</p>
+      </li>
+      <li class="row">
+        <p class="name-column">Atlassian's NodeRockets 9:00AM - 6:00PM</p>
+        <p class="gray-button">Ended</p>
+      </li>
+      <li class="row">
+        <p class="name-column">Pebble's NodeBoats 9:00AM - 6:00PM</p>
+        <p class="gray-button">Ended</p>
+      </li>
+      <li class="row">
+        <p class="name-column">Bocoup's NodeBots 9:00AM - 6:00PM</p>
+        <p class="gray-button">Sold out</p>
+      </li>
+      <li class="row">
+        <p class="name-column">NodeCopter - 9:00AM - 6:00PM</p>
+        <p class="gray-button">Ended</p>
+      </li>
+      <li class="row">
+        <p class="name-column">Huge Inc. Golf Tournament 9:00AM - 6:00PM</p>
+        <p class="gray-button">Ended</p>
+      </li>
+      <li class="row">
+        <p class="name-column">Segway Tour 10:00AM - 11:30AM</p>
+        <p class="gray-button">Sold out</p>
+      </li>
+      <li class="row">
+        <p class="name-column">Segway Tour 1:00PM- 2:30PM</p>
+        <p class="gray-button">Sold out</p>
+      </li>
+      <li class="row">
+        <p class="name-column">Segway Tour 3:00PM- 4:30PM</p>
+        <p class="gray-button">Sold out</p>
+      </li>
+      <li class="row">
+        <p class="name-column">Intent Media's Scavenger Hunt 10:00AM - 12:00PM</p>
+        <p class="gray-button">Ended</p>
+      </li>
+      <li class="row">
+        <p class="name-column">Kayak 8:30AM - 12:00PM</p>
+        <p class="gray-button">Sold out</p>
+      </li>
+      <li class="row">
+        <p class="name-column">Kayak 10:30AM - 1:00PM</p>
+        <p class="gray-button">Sold out</p>
+      </li>
+      <li class="row">
+        <p class="name-column">Kayak 12:30PM - 3:00PM</p>
+        <p class="gray-button">Sold out</p>
+      </li>
+      <li class="row">
+        <p class="name-column">Significant Other Adult Meal Ticket - Last Minute</p>
+        <p class="gray-button">Ended</p>
+      </li>
+      <li class="row">
+        <p class="name-column">Significant Other Child (12 and younger) Meal Ticket - Last Minute</p>
+        <p class="gray-button">Ended</p>
+      </li>
+      <li class="row">
+        <p class="name-column">specialbrunchmeals</p>
+        <p class="gray-button">Sold out</p>
+      </li>
+      <li class="row">
+        <p class="registration-message">Registration is not currently available.</p>
+        <p class="tito-link">By the power of <a href="https://ti.to/">Tito</a></p>
+      </li>
+    </ul>
+  </div>
 
+    <section>
+      <article>
+      <h2>Pricing Details for JSConf US 2015</h2>
+      <p>Below is the pricing tiers for JSConf US 2015. We have tried to tier the ticket release batches such that anyone around the world can access them when they first open up. If we have missed something or you need assistance, please <a href="mailto:team@jsconf.us">contact us directly.</a> If you require information about the event for corporate, educational, or other reimbursement, you are responsible for requesting and obtaining it prior to the ticket sales opening up. We are purposefully providing a significant lead time on ticket sales for this reason.</p>
+
+        <h3>Queen ($1,050)</h3>
+        <p>A batch of tickets will be made available starting January 28th, 2015 at 9:00 AM EST at <a href="https://ti.to/jsconf-us/jsconfus2015/">tickets.jsconf.us.</a> Tickets will be sold on a first-come, first-served basis with no refunds offered, but the <a href="#transfer">tickets can be transferred.</a>Once the set of tickets are sold out, there are no more.</p>
+      </article>
+      <article>
+        <h3>Toto ($1,050)</h3>
+        <p>A batch of tickets will be made available starting January 28th, 2015 at 9:00 AM EST at <a href="https://ti.to/jsconf-us/jsconfus2015/">tickets.jsconf.us.</a>  Tickets will be sold on a first-come, first-served basis with no refunds offered, but the <a href="#transfer">tickets can be transferred.</a> Once the set of tickets are sold out, there are no more.</p>
+      </article>
+      <article>
+        <h3>The Sugarhill Gang ($1,600)</h3>
+        <p>A batch of tickets will be made available starting January 28th, 2015 at 9:00 AM EST at <a href="https://ti.to/jsconf-us/jsconfus2015/">tickets.jsconf.us.</a>  Tickets will be sold on a first-come, first-served basis with no refunds offered, but the <a href="#transfer">tickets can be transferred.</a> Once the set of tickets are sold out, there are no more.</p>
+      </article>
+      <article>
+        <h3>Journey ($1,999)</h3>
+        <p>Don't stop believing, the final batch of tickets will be made available starting February 11th, 2015 at 1:00 PM EST at <a href="https://ti.to/jsconf-us/jsconfus2015/">tickets.jsconf.us.</a> Tickets will be sold on a first-come, first-served basis with no refunds offered, but the <a href="#transfer">tickets can be transferred.</a> Once the set of tickets are sold out, there are no more.</p>
+      </article>
+      <center>
+        <a href="https://ti.to/jsconf-us/jsconfus2015" class="blue-button">Tickets Now on Sale!</a>
+      </center>
+  </section>
+
+<section>
+  <h2>Extra Meal Tickets for JSConf US 2015</h2>
+  <article>
+    <h3>Vegan Meal Ticket ($20)</h3>
+    <p>We have provided vegan specific meals since 2010, every year we end up with almost 90% of those meal uneaten. These meals often cost more than the buffet meals provided to other attendees due to the special requirements to prepare them. If you require a specifically prepared meal, vegan or otherwise, that cannot be serviced as part of a group buffet, we ask that you purchase a Vegan Meal Ticket. With the meal ticket, we will have a specially prepared meal ready for you at every meal and social event. If you have any questions about this, please <a href="mailto:team@jsconf.us"> email us directly.</a></p>
+  </article>
+  <article>
+    <h3>Significant Other Meal Ticket (Adult: $350, Child - 12 and under: $175)</h3>
+    <p>We do invite you to bring your significant other(s) along to JSConf US 2015 and will be providing a sponsored activities track for them. In supplement to the activities some significant others have expressed interest in joining for meals with the attendees. If you want to eat with the conference, be sure to purchase a Significant Other meal ticket. This meal ticket provides access to all four social events (3 evening socials and 1 relax.js brunch) as well as breakfast on Wednesday and Friday.</p>
+  </article>
+  <article>
+    <h2>Conference Attendance Agreements</h2>
+    <p>By purchasing a JSConf US ticket, you will be explicitly required to agree with our stated <a href="codeofconduct.html">Code of Conduct.</a> You acknowledge that if you or a group you are involved with act in a manner not in accordance with the code of conduct, you will be expelled from the conference with no refund. You agree that you will act with respect for other attendees, organizers, speakers, and staff (both conference and venue) for your entire stay at JSConf US. Finally, you agree that if you see something wrong you will notify a JSConf Staff member to allow them to take swift and appropriate actions. The privacy of individuals reporting issues will be maintained and we deeply appreciate your willingness to come forward about issues. We are here to help.</p>
+  </article>
+  <article>
+    <h2 id="transfer">Transferring a Ticket</h2>
+    <p>Tickets will not be refunded under any circumstances, but they may be transferred. To transfer the ownership of a JSConf US 2015 ticket, you can simply send the registration link you will receive from Tito and allow the individual you are transferring to to update their information. Transfers will not be handled by or involve the JSConf team. Tickets may be transferred until May 1st, 2015 due to printing deadlines. We appreciate your understanding in this matter.</p>
+  </article>
+  <article>
+    <h2>Why Are You Selling Tickets Before Speakers Are Announced And So Early?</h2>
+    <p>Our conference dates are scheduled shortly after the US Federal holiday of Memorial Day, which historically has higher than normal travel costs. We are trying to allow JSConf attendees the ability to book their travel arrangements significantly in advance so as to take advantage of lower prices. We understand that the cost of a conference isn't just the price of the ticket, but also the hotel, travel, ticket, and other miscellaneous items as such we are doing our best to allow you the opportunity to make that as cost-effective as possible. We understand that some people might not be comfortable purchasing a ticket to a conference with little to no insight about what will be presented at the event. We encourage you to review our previous 5 absolutely amazing events and the wonderful track record we have. If that is not enough to convince you, please to bear in mind that we do offer all of the content for free shortly after the event. We apologize for any inconvenience or uncertainty this may cause you, but we are trying to balance the best of all worlds.</p>
+  </article>
+
+</section>
 </main>
 
   <div class="container">
