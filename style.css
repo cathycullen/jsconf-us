@@ -192,6 +192,125 @@ h4 {
     padding-right: 25px;
 }
 
+.blue-button {
+  display:inline-block;
+  background-color: #428bca;
+  border-color: #357ebd;
+  color: white;
+  font-size: 18px;
+  padding: 10px 16px;
+  line-height: 1.33;
+  border-radius: 6px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0 auto;
+  border: 1px solid transparent;
+}
+.blue-button:visited {
+    color: white;
+}
+li {
+  list-style: none;
+}
+/*
+.fa:hover, a:hover, a:visited:hover {
+    color: #28b5b5;
+    */
+.tickets .blue-button:hover,.tickets .blue-button:visited:hover, .tickets .blue-button:focus, .tickets .blue-button:active {
+    background-color: #3276b1;
+    border-color: #285e8e;
+    color: #fff;
+}
+ a.blue-button {
+  color: white;
+}
+.tickets .header {
+  margin-bottom: 60px;
+}
+.tickets img {
+  margin-bottom: 8px;
+}
+.tickets p + p {
+  margin-top: 13px;
+}
+.tickets p {
+   margin: 0 0 10px 0;
+}
+.tickets p.tito-link {
+      font-size: 12px;
+      display: block;
+      margin-bottom: 5px;
+      text-align: center;
+      width: 100%;
+      margin: 30px 0 0 0;
+}
+.tickets p.name-column {
+  float: left;
+  font-weight: bold;
+  margin: 11px 0;
+}
+
+.tickets p.registration-message {
+    margin-top: -13px;
+    text-align: left;
+  font-weight: bold;
+  display:block;
+  margin: 0;
+}
+:nth-last-child(1)
+.tickets h3 {
+  margin:11px 0 10px 0;
+}
+.tickets .gray-button {
+    margin: 2px 0;
+    padding: 7px 24px;
+}
+.tickets .row {
+  padding-bottom: 0;
+  border-bottom: 1px solid #ccc;
+}
+.gray-button {
+    background: #ccc;
+    border-radius: 4px;
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    /*
+    height: 34px;
+    */
+    height: 30px;
+    line-height: 1.42857143;
+    margin: 2px 0;
+    padding: 3px 12px;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+    float: right;
+}
+.table-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #f1f1f1;
+    font-family: sans-serif;
+    color: #333;
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 10px 10px 0 10px;
+    width: 100%;
+}
+.name-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+.tickets.column-2 {
+  float: right;
+}
+.tickets .tito-row {
+  margin-top: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid #ccc;
+}
+
 @media(min-width:768px) {
   .container {
     max-width: 750px
