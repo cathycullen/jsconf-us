@@ -113,9 +113,11 @@ h2 a {
 .col-40-pct {
   width: 40%;
 }
+/*
 .row {
   padding-bottom: 20px;
 }
+*/
 .row:after {
   clear:both;
   content: "";
@@ -156,8 +158,9 @@ main .container img {
   padding-bottom: 5px;
 }
 .speaker {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   border-bottom: 1px solid #246f84;
+  padding-bottom: 24px;
 }
 .no-photo {
     padding-left: 150px;
@@ -219,14 +222,18 @@ li {
  a.blue-button {
   color: white;
 }
+#training-track-header h2, .speaker h2{
+  margin-bottom: 70px;
+}
 .tickets .header {
-  margin-bottom: 60px;
+    margin-bottom: 59px;
 }
 .tickets img {
   margin-bottom: 8px;
 }
 .tickets p + p {
-  margin-top: 13px;
+  margin-top: 0;
+  margin-botton: 0;
 }
 .tickets p {
    margin: 0 0 10px 0;
@@ -319,6 +326,41 @@ h4 {
 #schedule h3 {
     margin-top: 40px;
 }
+.speaker h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#training-track-header p {
+    margin: 17px 0 10px 0;
+    padding-bottom: 41px;
+    border-bottom: 1px solid #246f84;
+}
+.training-track-article {
+    padding-bottom: 13px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #246f84;
+}
+.training-track-article .column-2 {
+    margin-left: 134px;
+}
+.track {
+  margin-left: 134px;
+}
+.training-track-article .social {
+  color: #010b18;
+}
+.training-track-article h4 {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+.training-track-article h3 {
+  margin-botton: 18px;
+  margin-top: 22px;
+}
+
+
 .table-bordered {
     border: 1px solid #ddd;
 }
