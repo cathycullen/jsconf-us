@@ -2,7 +2,15 @@ header {
   text-align: center;
 }
 
-a, a:link, a:visited {
+a{
+  color: #fc00ac;
+  text-decoration: none;
+}
+ a:link {
+  color: #fc00ac;
+  text-decoration: none;
+}
+a:visited {
   color: #fc00ac;
   text-decoration: none;
 }

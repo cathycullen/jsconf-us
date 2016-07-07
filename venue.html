@@ -3,13 +3,22 @@
 <head>
 <title>JS Conf US</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="header-footer.css">
-<link rel="stylesheet" href="home.css">
-<link rel="stylesheet" href="speakers.css">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 <style>
+.caption {
+  margin: 0;
+}
+.hotel-caption {
+  margin-top: 53px;
+}
+
+#venue .row {
+  padding-bottom: 20px;
+  margin: 0 -15px;
+}
 </style>
 </head>
 <body>
@@ -47,27 +56,51 @@
     </nav>
   </div>
   </header>
-  <main>
+  <main id="venue" class="container">
+    <img src="img/resort.jpg" alt="Omni Amelia Resort">
 
-
-</main>
-
-  <div class="container">
-    <footer>
-      <center><a href="/"><img src="img/js.png" alt="JSConf US 2015" height="82" width="82" /></a><br/><br/>
-        <a href="home.html" >Home</a>  |
-        <a href="schedule.html">Schedule</a>  |
-        <a href="call-for-speakers.html">Call for Speakers</a>  |
-        <a href="venue.html">Venue</a>  |
-        <a href="sponsors.html">Sponsors</a>  |
-        <a href="about.html">About</a>  |
-        <a title="Tickets" href="https://ti.to/jsconf-us/jsconfus2015">Tickets</a> |
-        <a href="venue.html#villas">Lodging</a>
-        <div class="credits">
-          <p ><br/>Copyright &copy; 2016 Iterative Designs</p>
+    <article >
+      <div class="row" >
+        <div class="column-1 col-100-pct">
+          <h2 class="headline">Omni Amelia Island <br/><span class="gray-text">Resort</span></h2>
+          <p class="lead">The <a href="http://www.omnihotels.com/FindAHotel/AmeliaIsland.aspx">Omni Amelia Island Resort</a> will be the home to JSConf US 2015 once again and it is the perfect setting for an amazing time. Unlike a typical hackerspace or maker event, JSConf US is being presented in a uniqe and intimate space to encourage social interactions and give you unprecedented access to speakers and vendors. This getaway is the perfect environment to have three days, or a whole week, of complete focus on JS and community building, all while providing for your every whim. This venue, this space, this event -- it is amazing. </p>
         </div>
+      </div>
+      <center>        <a class="blue-button button-big hotel-caption" href="http://www.omnihotels.com/hotels/amelia-island-plantation/meetings/js-conference-5" >Hotel Rooms Just $214/Night!</a>
+        <p class="caption">Rate Available Until April 27th, 2015<br>They will sell out, so book early!</p>
       </center>
-    </footer>
-  </div>
+      <hr class="divider">
+    </article>
+
+      <article class="container">
+        <div class="row" >
+        <center class="column-1 col-40-pct img-column" >  <a  href="http://www.omnihotels.com/FindAHotel/AmeliaIsland/MapAndDirections.aspx"><iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d219996.51208843317!2d-81.6971837024558!3d30.50843940182532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x88e5af7f6f0a4213%3A0x19f818864f7d7b66!2sJacksonville+International+Airport%2C+2400+Yankee+Clipper+Drive%2C+Jacksonville%2C+FL+32218!3m2!1d30.494070999999998!2d-81.68793699999999!4m5!1s0x88e4541101cf4f21%3A0x77ed9d8deb0a15d4!2sOmni+Amelia+Island+Plantation+Resort%2C+39+Beach+Lagoon+Road%2C+Fernandina+Beach%2C+FL+32034!3m2!1d30.555673!2d-81.44384699999999!5e0!3m2!1sen!2sus!4v1419121674082" width="400" height="450" frameborder="0" style="border:0"></iframe></a>
+        </center>
+          <div class="column-2 col-60-pct">
+            <h2 class="headline">Getting To <br/><span class="gray-text">Paradise.js</span></h2>
+            <p class="lead">Nestled in Florida, just south of Georgia, the barrier island of Amelia Island is an absolute paradise, in part because it is remote location. The closest airport is <a href="http://www.jia.aero/">Jacksonville International Airport (JAX)</a>, roughly 29 miles from the resort. If you opt to rent a car OR drive to Amelia Island, there is plenty of free parking on the resort If you do bring a car, you can head to the historic and beautiful <a href="http://www.ameliaisland.com/">Fernandina Beach</a>. </p>
+            <a class="lead" href="tickets.html" >How to Get Here!</a>
+          </div>
+        </div>
+      </article>
+
+    <!-- url("https://maps.gstatic.com/mapfiles/openhand_8_8.cur") 8 8, default -->
+
+  </main>
+  <footer >
+    <center><a href="/"><img src="img/js.png" alt="JSConf US 2015" height="82" width="82" /></a><br/><br/>
+      <a href="home.html" >Home</a>  |
+      <a href="schedule.html">Schedule</a>  |
+      <a href="call-for-speakers.html">Call for Speakers</a>  |
+      <a href="venue.html">Venue</a>  |
+      <a href="sponsors.html">Sponsors</a>  |
+      <a href="about.html">About</a>  |
+      <a title="Tickets" href="https://ti.to/jsconf-us/jsconfus2015">Tickets</a> |
+      <a href="venue.html#villas">Lodging</a>
+      <div class="credits">
+        <p ><br/>Copyright &copy; 2016 Iterative Designs</p>
+      </div>
+    </center>
+  </footer>
 
 </body>

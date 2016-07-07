@@ -3,6 +3,11 @@
 * {
   box-sizing: border-box;
 }
+/*
+.container, .column-1, .column-2 {
+  border-style:solid;
+}
+*/
 body {
     font: normal 16px 'Inconsolata', Helvetica, sans-serif;
     box-sizing: border-box;
@@ -10,6 +15,7 @@ body {
 p {
   color: #010b18;
   line-height: 22.85px;
+  margin: 0 0 10px;
 }
 .gray-text {
   color: #999;
@@ -18,10 +24,6 @@ b {
   background: yellow;
   color: #000000;
   font-weight: bold;
-}
-footer {
-  font-size: 16px;
-  margin: 150px 0;
 }
 main header .container {
   padding: 0;
@@ -42,6 +44,10 @@ main article p {
 }
 main header {
   overflow: auto;
+}
+
+.lead {
+  font-size: 21px;
 }
 .how-to-link {
   display: block;
@@ -98,26 +104,35 @@ h2 a {
   float: left;
   box-sizing: border-box;
   padding: 0 15px;
+  /*
+  padding-right: 15px;
+  */
 }
 
 .column-2 {
   overflow: hidden;
   padding: 0 15px;
 }
+.col-100-pct {
+  width: 100%;
+}
 .col-60-pct {
-  width: 60%;
+  width: 58.33%;
 }
 .col-10-pct {
   width: 10%;
 }
 .col-40-pct {
-  width: 40%;
+  width: 41.66%;
 }
-/*
-.row {
+
+.row {  /*
+  margin: 0 -15px;
+
   padding-bottom: 20px;
+  */
 }
-*/
+
 .row:after {
   clear:both;
   content: "";
@@ -143,6 +158,14 @@ main .container img {
 .container {
   margin: 0 auto;
   padding: 0 15px;
+}
+#home .container {
+  padding: 0;
+}
+
+footer {
+  font-size: 16px;
+  margin: 150px auto !important;
 }
 
 .speaker-pic {
@@ -195,16 +218,24 @@ h3 {
   background-color: #428bca;
   border-color: #357ebd;
   color: white;
-  font-size: 18px;
-  padding: 10px 16px;
-  line-height: 1.33;
-  border-radius: 6px;
   cursor: pointer;
   vertical-align: middle;
   margin: 0 auto;
   border: 1px solid transparent;
 }
-.blue-button:visited {
+.button-big {
+  font-size: 18px;
+  padding: 10px 16px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.button-small {
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42;
+  border-radius: 4px;
+}
+.blue-button:visited, .blue-button a:link, .blue-button a:visited {
     color: white;
 }
 li {
@@ -219,10 +250,12 @@ li {
     border-color: #285e8e;
     color: #fff;
 }
+/*
  a.blue-button {
   color: white;
 }
-#training-track-header h2, .speaker h2{
+*/
+#training-track-header h2, #speaker h2{
   margin-bottom: 70px;
 }
 .tickets .header {
@@ -323,8 +356,11 @@ h4 {
   line-height: 1.4;
   margin-top: 30px;
 }
-#schedule h3 {
+#schedule h3, #so-track h3 {
     margin-top: 40px;
+}
+#so-track h3 {
+    margin-top: 30px;
 }
 .speaker h4 {
   font-size: 16px;
