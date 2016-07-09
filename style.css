@@ -84,6 +84,7 @@ h2 a {
   font-weight:bold;
 }
 .a-well {
+  font-size: 16px;
   max-width: 1200px;
   min-height: 20px;
   padding: 19px;
@@ -442,13 +443,12 @@ td, th {
     display: table-cell;
     vertical-align: inherit;
 }
-/*
 
 .container {
   margin-left:0;
   padding-left: 0;
 }
-*/
+
 @media(min-width:768px) {
   .container {
     max-width: 750px
