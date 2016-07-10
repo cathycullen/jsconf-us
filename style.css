@@ -443,12 +443,12 @@ td, th {
     display: table-cell;
     vertical-align: inherit;
 }
-
+/*
 .container {
   margin-left:0;
   padding-left: 0;
 }
-
+*/
 @media(min-width:768px) {
   .container {
     max-width: 750px
