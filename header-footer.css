@@ -17,29 +17,29 @@ a:visited {
 a:hover ~ .fa {
     color: #28b5b5;
 }
-main .a-well .fa:hover, a:hover, a:visited:hover {
+main .<a href=""><img src= .fa:hover, a:hover, a:visited:hover {
   color: #28b5b5;
 }
 a:hover, a:focus {
   text-decoration: underline;
 }
-#logo-section {
+.logo-section {
   background: 000000 url("img/headerbg.png");
 }
-#logo-section h1  {
+.logo-section h1  {
     background:  url("img/jsconf-2015-logo.png") no-repeat;
     width: 690px;
     height: 230px;
     margin: 0 auto;
 }
-#logo-section h1:hover {
+.logo-section h1:hover {
     background: url("img/pegasus.png") no-repeat;
     width: 300px;
     height: 230px;
     margin: 0 auto;
     background-position-y: -57px;
 }
-#logo-section .summary {
+.logo-section .summary {
   font-size: 14px;
   text-align: right;
   position: absolute;
@@ -48,7 +48,7 @@ a:hover, a:focus {
   top: 15px;
   line-height: 1.4;
 }
-#logo-section .summary  a i {
+.logo-section .summary  a i {
   font-size: 20px;
   color: white;
   margin-left: 12px;
@@ -93,13 +93,13 @@ header .nav li a {
 
 @media (max-width: 768px) {
 
-  #logo-section h1  {
+  .logo-section h1  {
     height: 185px;
 }
-  #logo-section {
+  .logo-section {
     background: #222;
   }
-  #logo-section .summary {
+  .logo-section .summary {
     background: #fc00ac;
     text-align: center;
     position: relative;
@@ -107,7 +107,7 @@ header .nav li a {
     right: 0;
     top: 0;
   }
-  #logo-section h1 {
+  .logo-section h1 {
     margin-top: -41px;
     margin-bottom: 5px;
   }
