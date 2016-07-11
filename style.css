@@ -139,6 +139,10 @@ h2 a {
   width: 10%;
 }
 
+.width-30-pct {
+  width: 30%;
+}
+
 .width-41-point-66-pct {
   width: 41.66%;
 }
@@ -383,15 +387,38 @@ h4 {
   line-height: 1.4;
   margin-top: 30px;
 }
-#schedule h3, #so-track h3 {
+#schedule h3 {
     margin-top: 40px;
-}
-#so-track h3 {
-    margin-top: 30px;
 }
 .speaker h4 {
   font-size: 16px;
   font-weight: bold;
+}
+
+#so-track h2 {
+  font-size: 28px;
+  font-weight: 200;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+#so-track h2 a{
+  font-weight: normal;
+}
+#so-track h3 {
+  font-size: 24px;
+  font-weight: 500
+    margin-top: 30px;
+}
+#so-track h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+#so-track h5 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 15px 0 10px;
+  line-height: 1.1;
 }
 
 #training-track-header p {
