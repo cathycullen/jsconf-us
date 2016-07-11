@@ -127,12 +127,29 @@ h2 a {
   width: 41.66%;
 }
 
-.row {  /*
-  margin: 0 -15px;
-
-  padding-bottom: 20px;
-  */
+.width-100-pct {
+  width: 100%;
 }
+
+.width-58-point-33-pct {
+  width: 58.33%;
+}
+
+.width-10-pct {
+  width: 10%;
+}
+
+.width-41-point-66-pct {
+  width: 41.66%;
+}
+.width-5-pct {
+  width: 5%;
+}
+
+.width-95-pct {
+  width: 95%;
+}
+
 
 .row:after {
   clear:both;
