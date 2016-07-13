@@ -1,7 +1,7 @@
 header {
   text-align: center;
 }
-main a, main a:link {
+main a, main a:link, footer a{
   color: #fc00ac;
   text-decoration: none;
 }
@@ -9,7 +9,7 @@ main a:hover ~ .fa {
     color: #28b5b5;
     text-decoration: underline;
 }
-main .fa:hover, a:hover, a:visited:hover {
+main .fa:hover, main a:hover, main a:visited:hover {
   color: #28b5b5;
   text-decoration: underline;
 }

@@ -300,11 +300,13 @@ footer {
     float: right;
     font-size:20px;
 }
+.inline-block {
+  display: inline-block;
+}
 h3 {
   font-size: 24px;
   margin-bottom: 10px;
   font-weight: 500;
-  display: block;
 }
 .speaker p {
   font-size: 13px;
@@ -343,6 +345,7 @@ h3 {
 }
 .selected > a, a:link.blue-button, .blue-button:visited, .blue-button a:link, .blue-button a:visited {
     color: white;
+    font-weight: bold;
 }
 #checkbox {
   display: none;
@@ -413,6 +416,9 @@ li {
   margin-bottom: 23px;
 }
 
+.img-responsive {
+  max-width: 100%;
+}
 .tickets .header {
     margin-bottom: 59px;
 }
@@ -452,8 +458,9 @@ li {
   margin:11px 0 10px 0;
 }
 .tickets .gray-button {
-    margin: 7px 0;
-    padding: 7px 24px;
+    height: 34px;
+    padding: 6px 12px;
+    margin: 5px 0;
 }
 
 .tickets .row {
