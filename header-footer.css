@@ -1,56 +1,68 @@
 header {
   text-align: center;
 }
-
-a{
+main a, main a:link {
   color: #fc00ac;
   text-decoration: none;
 }
- a:link {
-  color: #fc00ac;
-  text-decoration: none;
-}
-a:visited {
-  color: #fc00ac;
-  text-decoration: none;
-}
-a:hover ~ .fa {
+main a:hover ~ .fa {
     color: #28b5b5;
+    text-decoration: underline;
 }
-main .<a href=""><img src= .fa:hover, a:hover, a:visited:hover {
+main .fa:hover, a:hover, a:visited:hover {
   color: #28b5b5;
-}
-a:hover, a:focus {
   text-decoration: underline;
 }
-.nav {
+main a:hover, main a:focus {
+  text-decoration: underline;
+}
+nav a:focus, nav a:hover {
+    color: white;
+    text-decoration: none;
+}
+nav {
   font-size: 14px;
   background-color: #222;
   padding: 0 15px;
   margin-bottom: 20px;
 }
-
-.nav a {
+nav:active>a {
+    color: #fff;
+    background-color: #080808;
+}
+nav a {
     color: #999;
     display:block;
     padding: 15px 10px;
     text-decoration: none;
     line-height: 20px;
 }
-.nav li {
+nav li {
   display: inline-block;
   margin: 0 0 0 14px;
 }
-.nav i.fa {
+nav i.fa {
   margin-right: 10px;
 }
-header .nav ul {
+header nav ul {
   text-align: center;
   padding: 0 30px;
 }
-header .nav a:hover {
+header nav a:hover {
     color: #fff;
     background-color: transparent;
+}
+
+header .nav-bar > li > a:focus, header .nav-bar > li > a:hover {
+  color: white;
+}
+
+#home .a-well:hover .fa-plane {
+  color: #28b5b5;
+  text-decoration: none;
+}
+#home .how-to-link:hover {
+  text-decoration: underline;
 }
 
 .logo-section {
@@ -59,13 +71,13 @@ header .nav a:hover {
 .logo-section h1  {
     background:  url("img/jsconf-2015-logo.png") no-repeat;
     width: 690px;
-    height: 230px;
+    height: 212px;
     margin: 0 auto;
 }
 .logo-section h1:hover {
     background: url("img/pegasus.png") no-repeat;
     width: 300px;
-    height: 230px;
+    height: 212px;
     margin: 0 auto;
     background-position-y: -57px;
 }
@@ -84,15 +96,25 @@ header .nav a:hover {
   margin-left: 12px;
 }
 
-.nav-row {
+header label .fa {
   display: none;
 }
+.nav-button {
+  float: right;
+  margin-right: 20px;
+  position: relative;
+  top: 13px;
+}
 
+#hamburger {
+  display: none;
+}
 @media (max-width: 768px) {
 
-  .logo-section h1  {
-    height: 185px;
-}
+  #checkbox:checked ~ nav > ul > li {
+    display:none;
+  }
+
   .logo-section {
     background: #222;
   }
@@ -109,46 +131,30 @@ header .nav a:hover {
     margin-bottom: 5px;
   }
 
-.nav-row {
-    background: #222;
-    display:block;
-    padding: 5px;
-}
-.nav-button-frame {
-  border-radius: 4px;
-  border-style: solid;
-  border-color: gray;
-  float:right;
-  padding: 5px 10px;
-  border-width: 1.5px;
-}
-.nav-button {
-  font-size: 1.3em;
-  margin: 0;
-}
-.nav-button .fa {
-  margin: 0;
-  color: white;
-}
-.nav-row:after {
-  clear:both;
-  display:block;
-  content: "";
-}
-.summary .fa {
-  font-size: 20px;
-}
-a.button:clicked {
-    /* show or hide the vertical nav */
-}
-a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
+  .nav-button {
+    font-size: 1.3em;
+    margin: 0;
+    cursor: pointer;
+    display: block;
+  }
 
-    text-decoration: none;
-    color: initial;
-}
+  #hamburger {
+    display: block;
+  }
+  .nav-button .fa {
+    margin: 0;
+    color: white;
+  }
+  .summary .fa {
+    font-size: 20px;
+  }
+  a.button {
+      -webkit-appearance: button;
+      -moz-appearance: button;
+      appearance: button;
+      text-decoration: none;
+      color: initial;
+  }
 
   .container {
     width: 100%;
@@ -158,25 +164,26 @@ a.button {
     display: none;
   }
 
-  header .nav ul {
+  header nav {
+    margin-top: 50px;
+    border-top: 1px solid transparent;
+  }
+  header nav ul {
     text-align: left;
     padding: 0 5px;
     border-top-width: 1px;
     border-top-color: gray;
     border-top-style: groove;
   }
-  header .nav li {
+  header nav li {
     display: block;
     margin: 0;
   }
-  header .nav li a {
+  header nav li a {
     padding: 10px 0;
       color: #999;
   }
-  header .nav li i {
+  header nav li i {
     color: #999;
-  }
-  a.nav-button:active ~nav {
-    background-color: white;
   }
 }

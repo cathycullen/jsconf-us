@@ -8,52 +8,34 @@
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 <style>
-.caption {
-  margin: 0;
-}
-.hotel-caption {
-  margin-top: 53px;
-}
-
-#venue .row {
-  padding-bottom: 20px;
-  margin: 0 -15px;
-}
 </style>
 </head>
 <body>
   <header>
     <div class="logo-section">
       <h1><a href="home.html"></a></h1>
-      <div class="container">
-        <div class="summary">  5/27/2015 - 5/29/2015 <br/>Amelia Island, FL <br />
-          <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-        </div>
-        <div class="nav-row">
-          <div class="nav-button-frame">
-            <a href="" class="nav-button"><i class="fa fa-bars" aria-hidden="true"></i></a>
-          </div>
-        </div>
+      <div class="summary">  5/27/2015 - 5/29/2015 <br/>Amelia Island, FL <br />
+        <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
       </div>
-    </div>
-    <div class="nav">
-      <div class="container">
+      <input type="checkbox" id="checkbox"></input>
+      <label for="checkbox" id="hamburger" class="nav-button fa fa-bars"></label>
+      <br>
+      <nav>
         <ul>
           <li><a href="home.html"><i class='fa fa-home'></i>Home</a></li>
           <li><a href="tickets.html"><i class='fa fa-ticket'></i>Attend</a></li>
-          <li><a href="schedule.html"><i class='fa fa-calendar'></i>Schedule</a></li>
+          <li><a href="schedule.html"><i class='fa fa-calendar's></i>Schedule</a></li>
           <li><a href="speakers.html"><i class='fa fa-microphone'></i>Speakers</a></li>
           <li><a href="trainingtrack.html"><i class='fa fa-puzzle-piece'></i>Learn</a></li>
           <li><a href="sotrack.html"><i class='fa fa-smile-o'></i>SO Track</a></li>
-          <li><a href="venue.html"><i class='fa fa-globe'></i>Venue</a></li>
+          <li class="selected"><a href="venue.html"><i class='fa fa-globe'></i>Venue</a></li>
           <li><a href="sponsors.html"><i class='fa fa-rocket'></i>Sponsors</a></li>
           <li><a href="codeofconduct.html"><i class='fa fa-users'></i>Conduct</a></li>
           <li><a href="about.html"><i class='fa fa-heart'></i>About</a></li>
-      </ul>
-      </div>
-    </nav>
+        </ul>
+      </nav>
   </div>
   </header>
   <main id="venue" class="container">
@@ -74,7 +56,7 @@
 
       <article class="container">
         <div class="row" >
-        <center class="column-1 width-41-point-66-pct img-column" >  <a  href="http://www.omnihotels.com/FindAHotel/AmeliaIsland/MapAndDirections.aspx"><iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d219996.51208843317!2d-81.6971837024558!3d30.50843940182532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x88e5af7f6f0a4213%3A0x19f818864f7d7b66!2sJacksonville+International+Airport%2C+2400+Yankee+Clipper+Drive%2C+Jacksonville%2C+FL+32218!3m2!1d30.494070999999998!2d-81.68793699999999!4m5!1s0x88e4541101cf4f21%3A0x77ed9d8deb0a15d4!2sOmni+Amelia+Island+Plantation+Resort%2C+39+Beach+Lagoon+Road%2C+Fernandina+Beach%2C+FL+32034!3m2!1d30.555673!2d-81.44384699999999!5e0!3m2!1sen!2sus!4v1419121674082" width="400" height="450" frameborder="0" style="border:0"></iframe></a>
+        <center class="column-1 width-41-point-66-pct img-column" >  <a  href="http://www.omnihotels.com/FindAHotel/AmeliaIsland/MapAndDirections.aspx"><iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d219996.51208843317!2d-81.6971837024558!3d30.50843940182532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e6!4m5!1s0x88e5af7f6f0a4213%3A0x19f818864f7d7b66!2sJacksonville+International+Airport%2C+2400+Yankee+Clipper+Drive%2C+Jacksonville%2C+FL+32218!3m2!1d30.494070999999998!2d-81.68793699999999!4m5!1s0x88e4541101cf4f21%3A0x77ed9d8deb0a15d4!2sOmni+Amelia+Island+Plantation+Resort%2C+39+Beach+Lagoon+Road%2C+Fernandina+Beach%2C+FL+32034!3m2!1d30.555673!2d-81.44384699999999!5e0!3m2!1sen!2sus!4v1419121674082" width="<40></40>0" height="450" frameborder="0" style="border:0"></iframe></a>
         </center>
           <div class="column-2 width-58-point-33-pct">
             <h2 class="headline">Getting To <br/><span class="gray-text">Paradise.js</span></h2>
@@ -83,8 +65,6 @@
           </div>
         </div>
       </article>
-
-    <!-- url("https://maps.gstatic.com/mapfiles/openhand_8_8.cur") 8 8, default -->
 
   </main>
   <footer >
