@@ -65,7 +65,7 @@ h2 {
   line-height: 1;
   letter-spacing: -1px;
   color: #010b18;
-  font-weight: normal;
+  font-weight: 500;
 }
 .headline {
   font-size: 50px;
@@ -98,9 +98,10 @@ h2 a {
 }
 
 .column-1 {
-  float: left;
+  position: relative;
   box-sizing: border-box;
   padding: 0 15px;
+  margin-bottom: 20px;
   /*
   padding-right: 15px;
   */
@@ -110,45 +111,16 @@ h2 a {
   overflow: hidden;
   padding: 0 15px;
 }
-.col-100-pct {
-  width: 100%;
-}
-.col-60-pct {
-  width: 58.33%;
-}
-.col-10-pct {
-  width: 10%;
-}
-.col-40-pct {
-  width: 41.66%;
-}
-
-.width-100-pct {
-  width: 100%;
-}
-
-.width-58-point-33-pct {
-  width: 58.33%;
-}
-
-.width-10-pct {
-  width: 10%;
-}
-
-.width-30-pct {
+.table-width-30-pct {
   width: 30%;
 }
-
-.width-41-point-66-pct {
-  width: 41.66%;
-}
-.width-5-pct {
+.table-width-5-pct {
   width: 5%;
 }
-
-.width-95-pct {
+.table-width-95-pct {
   width: 95%;
 }
+
 
 .img-100 {
   width: 100px;
@@ -160,7 +132,7 @@ h2 a {
   height: 82px;
 }
 
-.row:after {
+.row:after, .sponsor-row:after{
   clear:both;
   content: "";
   display: block;
@@ -198,6 +170,9 @@ main .container img {
 #home .row {
   padding-bottom: 20px;
   margin: 0 -15px;
+}
+#home .sponsor-row {
+  padding-bottom: 20px;
 }
 
 #sponsors main {
@@ -395,7 +370,6 @@ li {
   float: left;
   width: 46%;
   margin: 20px 2%;
-
 }
 #about h3 {
   font-size: 24px;
@@ -418,6 +392,8 @@ li {
 
 .img-responsive {
   max-width: 100%;
+  display: block;
+  height: auto;
 }
 .tickets .header {
     margin-bottom: 59px;
@@ -491,10 +467,12 @@ li {
     background: #f1f1f1;
     font-family: sans-serif;
     color: #333;
+    margin: 20px auto 0 auto;
+    /*
     margin: 20px auto;
+    */
     max-width: 900px;
     padding: 10px 10px 0 10px;
-    width: 100%;
 }
 .name-wrapper {
     display: table-cell;
@@ -657,9 +635,60 @@ td, th {
     padding: 0;
   }
 }
+
+@media(max-width:768px) {
+  .headline {
+    font-size: 30px;
+  }
+  .lead {
+    font-size: 16.099px;
+  }
+  #home .container {
+    padding: 0 15px;
+  }
+}
 @media(min-width:992px) {
   .container {
       max-width: 970px;
+  }
+  .column-1 {
+    float: left;
+  }
+  .column-2 {
+    float: left;
+  }
+  .col-100-pct {
+    width: 100%;
+  }
+  .col-60-pct {
+    width: 58.33%;
+  }
+  .col-10-pct {
+    width: 10%;
+  }
+  .col-40-pct {
+    width: 41.66%;
+  }
+  .width-100-pct {
+    width: 100%;
+  }
+  .width-58-point-33-pct {
+    width: 58.33%;
+  }
+  .width-10-pct {
+    width: 10%;
+  }
+  .width-30-pct {
+    width: 30%;
+  }
+  .width-41-point-66-pct {
+    width: 41.66%;
+  }
+  .width-5-pct {
+    width: 5%;
+  }
+  .width-95-pct {
+    width: 95%;
   }
 }
 @media(min-width:1200px) {

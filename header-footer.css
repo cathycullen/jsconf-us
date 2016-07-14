@@ -160,10 +160,7 @@ header label .fa {
     width: 100%;
     padding: 0;
   }
-  br {
-    display: none;
-  }
-
+  
   header nav {
     margin-top: 50px;
     border-top: 1px solid transparent;
