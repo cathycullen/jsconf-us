@@ -7,6 +7,33 @@ body {
     font: normal 16px 'Inconsolata', Helvetica, sans-serif;
     box-sizing: border-box;
 }
+h1, h2, h3, h4, h5 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #010b18;
+}
+h4, h5 {
+  margin: 10px 0;
+}
+h1 {
+  font-size: 28px;
+  margin-bottom: 1.5em;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+}
+
 p {
   color: #010b18;
   line-height: 22.85px;
@@ -43,6 +70,9 @@ main header {
 
 .lead {
   font-size: 21px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  line-height: 1.4;
 }
 .how-to-link {
   display: inline;
@@ -59,17 +89,12 @@ main header {
   font-weight: bold;
 }
 
-h2 {
-  padding: 20px 0 10px 0;
-  font-size: 30px;
-  line-height: 1;
-  letter-spacing: -1px;
-  color: #010b18;
-  font-weight: 500;
-}
 .headline {
   font-size: 50px;
   padding: 0;
+  margin-top: 0;
+  line-height: 1;
+  letter-spacing: -1px;
 }
 h2 a {
   margin-top: 20px;
@@ -84,7 +109,6 @@ h2 a {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  text-align:center;
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
@@ -102,9 +126,6 @@ h2 a {
   box-sizing: border-box;
   padding: 0 15px;
   margin-bottom: 20px;
-  /*
-  padding-right: 15px;
-  */
 }
 
 .column-2 {
@@ -142,33 +163,38 @@ main .container img {
 }
 
 .sponsor {
-    height: 200px;
-    width: 200px;
-    margin: 12px 25px;
-    display: block;
-    line-height: 200px;
-    float: left;
-    overflow: hidden;
-    background-position: center center;
-    background-repeat: no-repeat;
-    opacity: 0.7;
+  height: 200px;
+  width: 200px;
+  margin: 12px 25px;
+  display: block;
+  line-height: 200px;
+  float: left;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.7;
 }
 
-.container {
+main .container {
   margin: 0 auto;
   padding: 0 15px;
 }
-#home .container {
-  padding: 0;
+.divider {
+    margin: 80px 0;
 }
 
+h2 > a {
+  display: block;
+}
 #home h3 {
   font-size: 30px;
   display:block;
   padding:27px 0 0 0;
 }
 #home .row {
+  /*
   padding-bottom: 20px;
+  */
   margin: 0 -15px;
 }
 #home .sponsor-row {
@@ -183,7 +209,7 @@ main .container img {
 }
 
 #sponsors h2 {
-  padding: 0;
+  margin-bottom: 22px;
 }
 #sponsors h3 {
   font-weight: bold;
@@ -192,22 +218,19 @@ main .container img {
   margin-bottom: 3px;
 }
 #sponsors img {
-  margin-bottom: 11px;
-  padding-top: 27px;
-  margin-top: 0;
+  margin-bottom: 14px;
 }
 #sponsors article p {
   font-size: 13px;
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 #sponsors article {
   border-bottom: 1px solid #246f84;
-  padding-bottom: 42px;
-  margin-bottom: 3px;
+    padding-bottom: 32px;
+    margin-bottom: 31px;
 }
 #sponsors {
-  margin-top: 42px;
 }
 #sponsors .a-well {
   font-size: 16px;
@@ -227,19 +250,18 @@ main .container img {
   height: 7px;
 }
 
-
 .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
     content: "\f0c9";
     border-radius: 4px;
     border-style: solid;
     float: right;
-    padding: 5px 10px;
     border-width: 1.5px;
-    font-size: 25px;
-    font-size: 25px;
     border-color: #333;
     margin-right: 15px;
     color: white;
+    position: relative;
+    margin-top: 4px;
+    font-size: 20px;
 }
 .nav-button:hover {
   background-color: #333;
@@ -248,7 +270,9 @@ footer {
   font-size: 16px;
   margin: 150px auto !important;
 }
-
+footer img {
+  display: block;
+}
 .speaker-pic {
   padding: 0;
   margin: 0;
@@ -258,13 +282,11 @@ footer {
   border-radius: 20px;
   box-shadow: 4px 4px 25px 0px rgba(50, 50, 50, 0.54);
 }
-.speaker-row {
-  padding-bottom: 5px;
-}
+
 .speaker {
   margin-bottom: 32px;
   border-bottom: 1px solid #246f84;
-  padding-bottom: 24px;
+  padding-bottom: 32px;
 }
 .no-photo {
     padding-left: 150px;
@@ -278,22 +300,29 @@ footer {
 .inline-block {
   display: inline-block;
 }
-h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  font-weight: 500;
-}
 .speaker p {
   font-size: 13px;
   line-height: 1.6;
-    margin: 10px 0 11px 0;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.training-track-article p {
+  margin-bottom: 28px;
 }
 .speaker .column-1 {
   padding: 0;
+  min-width: 100px;
 }
 .speaker .column-2 {
-    padding-left: 22px;
-    padding-right: 25px;
+    padding-left: 34px;
+    padding-right: 27px;
+}
+.speaker h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.speaker h4 {
+  margin-bottom: 0;
 }
 
 .blue-button {
@@ -315,8 +344,11 @@ h3 {
 .button-small {
   padding: 6px 12px;
   font-size: 14px;
-  line-height: 1.42;
+    line-height: 1.428571429;
   border-radius: 4px;
+}
+.selected {
+  background-color: #080808;
 }
 .selected > a, a:link.blue-button, .blue-button:visited, .blue-button a:link, .blue-button a:visited {
     color: white;
@@ -334,10 +366,12 @@ li {
     color: #fff;
     text-decoration: none;
 }
-#training-track-header h2, #speaker h2{
-  margin-bottom: 70px;
+#training-track-header h2 {
+  margin-bottom: 77px;
 }
-
+#speaker h2 {
+  margin-bottom: 76px;
+}
 #speaker .column-1 {
   float: left;
   box-sizing: border-box;
@@ -351,20 +385,7 @@ li {
 }
 
 #about p {
-  margin: 0 0 10px 0;
-}
-#about h2 {
-  padding-bottom: 7px;
-}
-#about h1 {
-  font-size: 50px;
-  margin-bottom: 24px;
-  font-weight: normal;
-}
-#about article {
-  padding-bottom: 71px;
-    border-bottom: 1px solid #eee;
-    margin-bottom: 77px;
+  margin: 0 0 5px 0;
 }
 #about .founder {
   float: left;
@@ -372,13 +393,14 @@ li {
   margin: 20px 2%;
 }
 #about h3 {
-  font-size: 24px;
   color: black;
+  margin-top: 0;
 }
 #about .social {
   font-size: 16px;
   float: none;
   display:block;
+  margin: 4px 0 10px 0;
 }
 .founder .right-col {
   margin-left: 120px;
@@ -386,10 +408,15 @@ li {
 .founder .left-col {
   float: left;
 }
+/*
 #about .row {
   margin-bottom: 23px;
 }
-
+*/
+#about h3 {
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
 .img-responsive {
   max-width: 100%;
   display: block;
@@ -409,30 +436,28 @@ li {
    margin: 0 0 10px 0;
 }
 .tickets p.tito-link {
-      font-size: 12px;
-      display: block;
-      margin-bottom: 5px;
-      text-align: center;
-      width: 100%;
-      margin: 30px 0 0 0;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+  width: 100%;
+  margin: 30px 0 0 0;
 }
 .tickets p.name-column {
   float: left;
   font-weight: bold;
   margin: 11px 0;
+  width: 80%;
 }
 
 .tickets p.registration-message {
-    margin-top: -13px;
-    text-align: left;
+  margin-top: -13px;
+  text-align: left;
   font-weight: bold;
   display:block;
   margin: 0;
 }
-:nth-last-child(1)
-.tickets h3 {
-  margin:11px 0 10px 0;
-}
+
 .tickets .gray-button {
     height: 34px;
     padding: 6px 12px;
@@ -449,9 +474,6 @@ li {
     color: #333;
     display: inline-block;
     font-size: 14px;
-    /*
-    height: 34px;
-    */
     height: 30px;
     line-height: 1.42857143;
     margin: 2px 0;
@@ -468,9 +490,6 @@ li {
     font-family: sans-serif;
     color: #333;
     margin: 20px auto 0 auto;
-    /*
-    margin: 20px auto;
-    */
     max-width: 900px;
     padding: 10px 10px 0 10px;
 }
@@ -487,11 +506,6 @@ li {
   border-bottom: 1px solid #ccc;
 }
 
-h4 {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 18px;
-}
 #schedule h4 {
   line-height: 1.4;
   margin-top: 30px;
@@ -499,45 +513,31 @@ h4 {
 #schedule h3 {
     margin-top: 40px;
 }
+#schedule img {
+  margin-bottom: 10px;
+}
 .speaker h4 {
   font-size: 16px;
   font-weight: bold;
-}
-
-#so-track h2 {
-  font-size: 28px;
-  font-weight: 200;
-  line-height: 1.1;
-  margin-bottom: 30px;
-}
-#so-track h2 a{
-  font-weight: normal;
+  margin-top: 6px;
+  line-height: 1.6;
+  margin-top: 0;
 }
 #so-track h3 {
-  font-size: 24px;
-  font-weight: 500
-    margin-top: 30px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 #so-track h4 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 30px;
+  margin: 34px 0 13px 0;
 }
-#so-track h5 {
-  font-size: 30px;
-  font-weight: 500;
-  margin: 15px 0 10px;
-  line-height: 1.1;
-}
+
 #venue .caption {
   margin: 0;
 }
 #venue .hotel-caption {
-  margin-top: 53px;
 }
 
 #venue .row {
-  padding-bottom: 20px;
   margin: 0 -15px;
 }
 #training-track-header p {
@@ -545,13 +545,15 @@ h4 {
     padding-bottom: 41px;
     border-bottom: 1px solid #246f84;
 }
-.training-track-article {
+#training-track .training-track-article {
     padding-bottom: 13px;
     margin-bottom: 12px;
     border-bottom: 1px solid #246f84;
 }
 .training-track-article .column-2 {
     margin-left: 134px;
+    padding-left: 10px;
+    padding-right: 15px;
 }
 .track {
   margin-left: 134px;
@@ -562,14 +564,12 @@ h4 {
 .training-track-article h4 {
   font-size: 16px;
   font-weight: bold;
-  padding-bottom: 12px;
 }
 .training-track-article h3 {
-  margin-botton: 18px;
+  margin-bottom: : 18px;
   margin-top: 22px;
+  display: block;
 }
-
-
 #conduct h1 {
   font-family: 'Poiret One', cursive;
   color: #333;
@@ -627,34 +627,92 @@ td, th {
     display: table-cell;
     vertical-align: inherit;
 }
+.center {
+  text-align: center;
+}
+#venue .column-1 {
+  margin-bottom: 0;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-
+@media (min-width:300px) and (max-width:449px) {
+  .tickets p.name-column {
+    width: 50%;
+  }
+}
+@media (min-width:450px) and (max-width:767px) {
+  .tickets p.name-column {
+    width: 60%;
+  }
+}
 @media(min-width:768px) {
   .container {
     max-width: 750px;
-    padding: 0;
+  }
+  nav li>a {
+    padding: 10px;
+  }
+  header nav ul  {
+    /*
+    margin-top: 4px;
+    */
   }
 }
 
 @media(max-width:768px) {
+
   .headline {
     font-size: 30px;
+  }
+  #venue .headline {
+    margin-top: 20px!important;
+  }
+
+  #home .column-2 .headline {
+    margin-top: 0!important;
   }
   .lead {
     font-size: 16.099px;
   }
-  #home .container {
+
+  .container {
+    width: 100%;
     padding: 0 15px;
+  }
+
+  #home article .container {
+    padding: 0 15px;
+  }
+
+  #home header.container {
+    padding: 0;
+  }
+  .hide-mobile {
+      display: none!important;
+  }
+  #venue.container {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  #venue .container .no-margin-mobile {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  #about section {
+    margin-left: -15px;
+    padding-top: 20px;
   }
 }
 @media(min-width:992px) {
   .container {
-      max-width: 970px;
+      min-width: 970px;
   }
   .column-1 {
-    float: left;
-  }
-  .column-2 {
     float: left;
   }
   .col-100-pct {
@@ -693,6 +751,6 @@ td, th {
 }
 @media(min-width:1200px) {
   .container {
-      max-width: 1170px;
+      min-width: 1170px;
   }
 }

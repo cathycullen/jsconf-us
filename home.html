@@ -13,43 +13,68 @@
 </head>
 <body>
   <header>
+    <div id="header">
+      <div id="logo">
+      </div>
+    </div>
+    <div class="summary">
+      <p>5/27/2015 - 5/29/2015</p>
+      <p>Amelia Island, FL</p>
+      <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+    </div>
+
+    <!--
     <div class="logo-section">
       <h1><a href="home.html"></a></h1>
-      <div class="summary">  5/27/2015 - 5/29/2015 <br/>Amelia Island, FL <br />
+      <div class="summary">
+        <p>5/27/2015 - 5/29/2015</p>
+        <p>Amelia Island, FL</p>
         <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
         <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
         <a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
       </div>
-      <input type="checkbox" id="checkbox"></input>
-      <label for="checkbox" id="hamburger" class="nav-button fa fa-bars"></label>
-      <br>
-      <nav>
-        <ul class="nav-bar">
-          <li><a href="home.html"><i class='fa fa-home'></i>Home</a></li>
-          <li><a href="tickets.html"><i class='fa fa-ticket'></i>Attend</a></li>
-          <li><a href="schedule.html"><i class='fa fa-calendar'></i>Schedule</a></li>
-          <li><a href="speakers.html"><i class='fa fa-microphone'></i>Speakers</a></li>
-          <li><a href="trainingtrack.html"><i class='fa fa-puzzle-piece'></i>Learn</a></li>
-          <li><a href="sotrack.html"><i class='fa fa-smile-o'></i>SO Track</a></li>
-          <li><a href="venue.html"><i class='fa fa-globe'></i>Venue</a></li>
-          <li><a href="sponsors.html"><i class='fa fa-rocket'></i>Sponsors</a></li>
-          <li><a href="codeofconduct.html"><i class='fa fa-users'></i>Conduct</a></li>
-          <li><a href="about.html"><i class='fa fa-heart'></i>About</a></li>
-        </ul>
-      </nav>
-  </div>
+    -->
+    <!--
+      <div class="nav-header">
+      -->
+        <input type="checkbox" id="checkbox"></input>
+        <label for="checkbox" id="hamburger" class="nav-button fa fa-bars"></label>
+
+          <div class="nav-header">
+          <nav class="container" >
+            <ul class="nav-bar">
+              <li><a href="home.html"><i class='fa fa-home'></i>Home</a></li>
+              <li><a href="tickets.html"><i class='fa fa-ticket'></i>Attend</a></li>
+              <li><a href="schedule.html"><i class='fa fa-calendar'></i>Schedule</a></li>
+              <li><a href="speakers.html"><i class='fa fa-microphone'></i>Speakers</a></li>
+              <li><a href="trainingtrack.html"><i class='fa fa-puzzle-piece'></i>Learn</a></li>
+              <li><a href="sotrack.html"><i class='fa fa-smile-o'></i>SO Track</a></li>
+              <li><a href="venue.html"><i class='fa fa-globe'></i>Venue</a></li>
+              <li><a href="sponsors.html"><i class='fa fa-rocket'></i>Sponsors</a></li>
+              <li><a href="codeofconduct.html"><i class='fa fa-users'></i>Conduct</a></li>
+              <li><a href="about.html"><i class='fa fa-heart'></i>About</a></li>
+            </ul>
+          </nav>
+        </div>
+<!--
+</div>
+  </div>-->
   </header>
   <main id="home">
     <header class="container">
       <div >
         <div class="a-well">
           <i class='fa fa-plane boom'></i>
-          <h3><a class="how-to-link" href="http://2015.jsconf.us/getting-here.html">How To Get To JSConf</a></h3>
+          <h2><a class="how-to-link" href="http://2015.jsconf.us/getting-here.html">How To Get To JSConf</a></h2>
         </div>
       </div>
     </header>
     <article class="container">
-      <hr class="divider">
+      <div class="row">
+        <hr class="divider">
+      </div>
       <div class="row" >
         <div class="column-1 width-58-point-33-pct lead">
           <h2 class="headline">See JS Of Today <br/><span class="gray-text">Be Part of JS Tomorrow</span></h2>
@@ -70,8 +95,12 @@
       </center>
         <div class="column-2 width-58-point-33-pct lead">
           <h2 class="headline">Pushing The Boundaries<br/><span class="gray-text">Every Single Year</span></h2>
-          <p class="lead">Over the last 7 years, JSConf has pushed the language outside of its comfort zone, the web browser, and into the forefront of <a href="http://jsconf.eu/2009/video_nodejs_by_ryan_dahl.html">servers</a>, <a href="http://nodecopter.com/">drones</a>, <a href="http://nodebots.io/">robots</a> and <a href="http://www.youtube.com/watch?v=O83-d0t0Ldw">video games</a>. Enjoy a very special day of exciting activities that are sure to make anyone happy from golfing to robot hacking to segway tours during our <a href="/schedule.html#cyoa">"choose-your-own-adventure" middle day</a> only at JSConf US.</p>
-          <a href="tickets.html" >Register now before it sells out.</a>
+          <p class="lead">Over the last 7 years, JSConf has pushed the language outside of its comfort zone, the web browser, and into the forefront of <a href="http://jsconf.eu/2009/video_nodejs_by_ryan_dahl.html">servers</a>, <a href="http://nodecopter.com/">drones</a>, <a href="http://nodebots.io/">robots</a> and <a href="http://www.youtube.com/watch?v=O83-d0t0Ldw">video games</a>. Enjoy a very special day of exciting activities that are sure to make anyone happy from golfing to robot hacking to segway tours during our <a href="/schedule.html#cyoa">"choose-your-own-adventure" middle day</a> only at JSConf US.
+            <br>
+            <br>
+            <a href="tickets.html" >Register now before it sells out.</a>
+          </p>
+
         </div>
       </div>
       <hr class="divider">
@@ -81,8 +110,11 @@
       <div class="row" >
         <div class="column-1 width-58-point-33-pct lead">
           <h2 class="headline">And One Last Thing <br/><span class="gray-text">The Venue</span></h2>
-          <p class="lead">Returning back to the <a href="/venue.html"><b>Omni Amelia Island Resort</b></a> with even more exciting events and adventures for you. Positioned north of Jacksonville, FL, this magical space has everything to make your trip incredible. Hop a segway, ride a bike, jump in the ocean, or enjoy the pool. Bring your friends and family, make a good time of the event. </p>
-          <a href="tickets.html" >The greatest venue ever awaits your arrival.</a>
+          <p class="lead">Returning back to the <a href="/venue.html"><b>Omni Amelia Island Resort</b></a> with even more exciting events and adventures for you. Positioned north of Jacksonville, FL, this magical space has everything to make your trip incredible. Hop a segway, ride a bike, jump in the ocean, or enjoy the pool. Bring your friends and family, make a good time of the event.
+            <br>
+            <br>
+            <a href="tickets.html" >The greatest venue ever awaits your arrival.</a>
+           </p>
         </div>
         <center class="column-2 width-41-point-66-pct img-column" >
           <img src="img/pool.jpg" alt="pool">
@@ -125,7 +157,9 @@
 </main>
 <footer>
   <div class="container">
-    <center><a href="/"><img src="img/js.png" alt="JSConf US 2015" class="img-82"/></a><br/><br/>
+    <center><a href="/"><img src="img/js.png" alt="JSConf US 2015" class="img-82"/></a>
+      <br>
+      <br>
       <a href="home.html" >Home</a>  |
       <a href="schedule.html">Schedule</a>  |
       <a href="call-for-speakers.html">Call for Speakers</a>  |
