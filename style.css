@@ -6,6 +6,7 @@
 body {
     font: normal 16px 'Inconsolata', Helvetica, sans-serif;
     box-sizing: border-box;
+    color: #010b18;
 }
 h1, h2, h3, h4, h5 {
   margin-top: 20px;

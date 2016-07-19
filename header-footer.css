@@ -1,6 +1,10 @@
 header {
   text-align: center;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  background-color: #222;
+}
+main header {
+  background-color: white;
 }
 main a, main a:link, footer a{
   color: #fc00ac;
@@ -135,8 +139,9 @@ header label .fa {
   .nav-header {
     width: 100%;
     background-color: #222;
-    border: 1px solid transparent;
+    min-height: 50px;
     /*
+    border: 1px solid transparent;
     border-color: #080808;
     min-height: 50px;
     margin-top: -12px;
@@ -155,7 +160,9 @@ header label .fa {
     }
 }
 @media (max-width: 768px) {
-
+  .nav-header {
+    min-height: 52px;
+  }
   #checkbox:checked ~ nav > ul > li {
     display:block;
   }
@@ -167,7 +174,7 @@ header label .fa {
   }
 
   #checkbox:checked ~ nav {
-      padding-bottom: 17px;
+      padding-bottom: 12px;
       padding-left: 0;
   }
 
@@ -185,13 +192,12 @@ header label .fa {
 .summary {
     background: #fc00ac;
     text-align: center;
-    position: relative;
+    position: absolute;
     padding: 15px 0;
-    right: 0;
-    top: 0;
-    top: 4px;
+    left: 0px;
+    right: 0px;
+    top: 150px;
     height: 50px;
-    margin-top: -10px;
   }
   .summary p, .summary a {
     display: inline;
@@ -203,6 +209,7 @@ header label .fa {
   #header {
     height: 150px;
     line-height: 150px;
+    margin-bottom: 50px;
   }
   .logo-section h1 {
     margin-top: -41px;
