@@ -654,9 +654,6 @@ main .home {
     padding-left: 0;
     padding-right: 0;
   }
-  #home .column-1 {
-    margin-botton: 0;
-  }
 }
 
 #venue .row {
@@ -664,7 +661,9 @@ main .home {
   margin-left: -15px;
 }
 @media(max-width:768px) {
-
+  #home .column-1 {
+    margin-bottom: 0;
+  }
   #home .lead p, #venue .lead  {
     font-size: 16.09px;
   }
