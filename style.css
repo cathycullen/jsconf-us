@@ -7,13 +7,19 @@ body {
     font: normal 16px 'Inconsolata', Helvetica, sans-serif;
     box-sizing: border-box;
     color: #010b18;
+    line-height: 1.428571429;
 }
 h1, h2, h3, h4, h5 {
-  margin-top: 40px;
   margin-bottom: 10px;
   font-weight: 500;
   line-height: 1.1;
   color: #010b18;
+}
+h1, h2 {
+  padding-top: 20px;
+}
+h3 {
+  margin-top: 20px;
 }
 h4, h5 {
   margin: 10px 0;
@@ -47,6 +53,7 @@ b {
   background: yellow;
   color: #000000;
   font-weight: bold;
+  line-height: 22.85px;
 }
 main header .container {
   padding: 0;
@@ -56,24 +63,15 @@ main header .fa {
   font-size: 48px;
   color: black;
 }
-main header h1 {
-  font-size: 30px;
-  color: #fc00ac;
-}
 
-main article p {
-  margin: 10px 0 32px 0;
-  line-height: 1.4;
-}
-main header {
-  overflow: auto;
-}
-
-.lead {
+#home .lead p , #venue .lead {
   font-size: 21px;
   margin-bottom: 20px;
   font-weight: 200;
   line-height: 1.4;
+}
+main header {
+  overflow: auto;
 }
 .how-to-link {
   display: inline;
@@ -90,13 +88,6 @@ main header {
   font-weight: bold;
 }
 
-.headline {
-  font-size: 50px;
-  padding: 0;
-  margin-top: 0;
-  line-height: 1;
-  letter-spacing: -1px;
-}
 h2 a {
   margin-top: 20px;
   text-decoration: none;
@@ -124,8 +115,6 @@ h2 a {
 
 .column-1 {
   position: relative;
-  box-sizing: border-box;
-  padding: 0 15px;
   margin-bottom: 20px;
 }
 
@@ -142,8 +131,6 @@ h2 a {
 .table-width-95-pct {
   width: 95%;
 }
-
-
 .img-100 {
   width: 100px;
   height: 100px;
@@ -191,12 +178,6 @@ h2 > a {
   font-size: 30px;
   display:block;
   padding:27px 0 0 0;
-}
-#home .row {
-  /*
-  padding-bottom: 20px;
-  */
-  margin: 0 -15px;
 }
 #home .sponsor-row {
   padding-bottom: 20px;
@@ -277,7 +258,6 @@ footer img {
 .speaker-pic {
   padding: 0;
   margin: 0;
-  width: 10%;
 }
 .speaker-img {
   border-radius: 20px;
@@ -310,22 +290,6 @@ footer img {
 .training-track-article p {
   margin-bottom: 28px;
 }
-.speaker .column-1 {
-  padding: 0;
-  min-width: 100px;
-}
-.speaker .column-2 {
-    padding-left: 34px;
-    padding-right: 27px;
-}
-.speaker h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
-}
-.speaker h4 {
-  margin-bottom: 0;
-}
-
 .blue-button {
   display:inline-block;
   background-color: #428bca;
@@ -376,10 +340,24 @@ li {
 #speaker .column-1 {
   float: left;
   box-sizing: border-box;
-  width: 10%;
+  padding-left: 15px;
+  min-width: 100px;
 }
 #speaker .column-2 {
   overflow: auto;
+  padding-left: 34px;
+  padding-right: 15px;
+}
+#speaker h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+#speaker h4 {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.6;
+  margin-top: 0;
 }
 #speaker .twitter-link {
   float: right;
@@ -391,7 +369,7 @@ li {
 #about .founder {
   float: left;
   width: 46%;
-  margin: 20px 2%;
+  margin: 20px 2% 28px 2%;
 }
 #about h3 {
   color: black;
@@ -409,11 +387,6 @@ li {
 .founder .left-col {
   float: left;
 }
-/*
-#about .row {
-  margin-bottom: 23px;
-}
-*/
 #about h3 {
   margin-top: 4px;
   margin-bottom: 10px;
@@ -424,7 +397,7 @@ li {
   height: auto;
 }
 .tickets .header {
-    margin-bottom: 59px;
+    margin-bottom: 65px;
 }
 .tickets img {
   margin-bottom: 8px;
@@ -511,18 +484,13 @@ li {
   line-height: 1.4;
   margin-top: 30px;
 }
+
 #schedule h3 {
     margin-top: 40px;
+    padding-top: 0;
 }
 #schedule img {
   margin-bottom: 10px;
-}
-.speaker h4 {
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 6px;
-  line-height: 1.6;
-  margin-top: 0;
 }
 #so-track h3 {
   margin-top: 40px;
@@ -537,10 +505,11 @@ li {
 }
 #venue .hotel-caption {
 }
-
-#venue .row {
-  margin: 0 -15px;
+#venue .row, #about .row, #home .row  {
+  margin-left: -15px;
+  margin-right: -15px;
 }
+
 #training-track-header p {
     margin: 17px 0 10px 0;
     padding-bottom: 41px;
@@ -640,6 +609,16 @@ td, th {
   padding-left: 15px;
   padding-right: 15px;
 }
+main .home {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+#home .column-1, #home .column-2 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 @media (min-width:300px) and (max-width:449px) {
   .tickets p.name-column {
@@ -652,53 +631,75 @@ td, th {
   }
 }
 @media(min-width:768px) {
+
+  main .home {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .headline {
+    font-size: 50px;
+    padding: 0;
+    margin-top: 0;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
   .container {
     max-width: 750px;
   }
   nav li>a {
     padding: 10px;
   }
-  header nav ul  {
-    /*
-    margin-top: 4px;
-    */
+  main .home {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #home .column-1 {
+    margin-botton: 0;
   }
 }
 
+#venue .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
 @media(max-width:768px) {
 
+  #home .lead p, #venue .lead  {
+    font-size: 16.09px;
+  }
+  #about .row  {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #ve
+  .column-1 {
+    margin-bottom: 0;
+  }
   .headline {
     font-size: 30px;
-  }
-  #venue .headline {
-    margin-top: 20px!important;
-  }
-
-  #home .column-2 .headline {
-    margin-top: 0!important;
   }
   .lead {
     font-size: 16.099px;
   }
-
   .container {
     width: 100%;
     padding: 0 15px;
   }
-
+  #venue .headline, {
+    margin-top: 20px!important;
+  }
+  #home .column-2 .headline {
+    margin-top: 0!important;
+  }
   #home article .container {
     padding: 0 15px;
   }
-
   #home header.container {
     padding: 0;
   }
   .hide-mobile {
       display: none!important;
-  }
-  #venue.container {
-    margin-left: 0;
-    padding-left: 0;
   }
   #venue .container .no-margin-mobile {
     margin-left: 0;
@@ -708,6 +709,14 @@ td, th {
     margin-left: -15px;
     padding-top: 20px;
   }
+}
+@media(max-width:1200px) {
+  #venue .column-2 {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
 }
 @media(min-width:992px) {
   .container {
